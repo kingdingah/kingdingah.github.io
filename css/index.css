@@ -1,0 +1,182 @@
+html, body
+{
+  min-height: 100%;
+  height: 100%;
+}
+
+*
+{
+  margin: 0 auto;
+  padding: 0 !important;
+  font-family: opensans;
+  max-width: 100% !important;
+}
+
+/* Fonts */
+
+@font-face
+{
+    font-family: opensans;
+    src: url('../fonts/opensans/OpenSans-Light.ttf');
+}
+
+@font-face
+{
+    font-family: opensans-b;
+    src: url('../fonts/opensans/OpenSans-SemiBold.ttf');
+}
+
+/* Main Styles */
+
+/* ScrollWheel Styles */
+
+div.nav-subbox::-webkit-scrollbar
+{
+  display: none;
+}
+/*
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #444;
+}
+*/
+div.main
+{
+  width: 100%;
+  height: auto;
+}
+
+div.black-overlay
+{
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  z-index: 900;
+  background-color: rgba(0,0,0,0.6);
+}
+
+div.site-footer
+{
+  height: 100px;
+  background-color: #111;
+}
+
+div.footer-content
+{
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* New Notes*/
+
+div.notes-container
+{
+  width: 350px;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+
+div.new-note
+{
+  width: 350px;
+  height: 60px;
+  background-color: #23a02f;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 1100;
+  bottom: -100px;
+  right: 25px
+}
+
+span.close-icon-info:hover
+{
+  cursor: pointer;
+}
+
+div.new-note span.close-icon-info
+{
+  height: 50px;
+  width: 50px;
+  display: block;
+  top: 0px;
+  left: 0px;
+  margin: 15px 0px 0px 15px;
+}
+
+div.new-note span.close-icon-info:hover
+{
+  cursor: pointer;
+}
+
+div.new-note span.close-icon-info img
+{
+  width: 30%;
+  height: auto;
+}
+
+span.close-icon-info
+{
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  border-radius: 10px;
+}
+
+span.note-info
+{
+  width:100%;
+  text-align: center;
+  font-size: 1.1em;
+  color: white;
+  height: 60px;
+  line-height: 60px;
+  display: block;
+}
+
+/* Quick Upload */
+
+div.quick-upload
+{
+  height: 100%;
+  width: 400px;
+  background-color: #333;
+  position: fixed;
+  left: -400px;
+  top: 0;
+  z-index: 999;
+}
+
+@media screen and (max-width: 990px)
+{
+  div.site-footer
+  {
+    height: 40px;
+    background-color: #111;
+  }
+
+  div.footer-content
+  {
+    margin-top: 0;
+    line-height: 40px;
+    font-size: 0.8em;
+  }
+}

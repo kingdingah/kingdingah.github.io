@@ -1,0 +1,655 @@
+@font-face
+{
+    font-family: nhgb;
+    src: url('../fonts/nhg/nhg75.ttf');
+}
+
+*
+{
+  font-family: nhgb !important;
+}
+
+.container-one, .container-three, .container-five
+{
+  height: 100%; width: 100%;
+  background-color: #111111;
+}
+
+.container-two, .container-four
+{
+  height: 100%; width: 100%;
+  background-color: #ef374f;
+}
+
+/* Container One */
+
+.container-one .links
+{
+  position: absolute;
+  top: 80px;
+  left: 180px;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  z-index: 12;
+}
+
+.container-one .links div
+{
+  font-size: 4em;
+  line-height: 1.2em;
+  color: white !important;
+  text-align: right;
+  height: 1.2em;
+  padding-right: 20px !important;
+  padding-left: 150px !important;
+  width: auto;
+  display: inline-block;
+  float: right;
+  clear: right;
+}
+
+.container-one .links div:hover
+{
+  background-color: white;
+  color: #ef374f !important;
+  cursor: pointer;
+}
+
+.container-one .left-stripe
+{
+  background: linear-gradient(-90deg, #111111, #ef374f);
+  height: calc(100% - 60px);
+  width: 60px;
+  position: absolute;
+  left: 70px;
+  top: 60px;
+  z-index: 10;
+}
+
+.container-one .mylogo
+{
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  z-index: 15;
+}
+
+/*
+.container-one .mylogo:hover
+{
+  -webkit-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+  transition: 300ms ease all;
+}
+*/
+
+.art-carousel
+{
+  position: absolute !important;
+  bottom: 50px;
+  z-index: 11 !important;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.art-carousel:active
+{
+  cursor: -webkit-grabbing !important;
+  cursor: grabbing !important;
+}
+
+.container-one .mylogo img
+{
+  height: 150px;
+  width: 150px;
+}
+
+div.owl-carousel, .owl-stage, .owl-item
+{
+  max-width: none !important;
+}
+
+.container-one .item
+{
+  height: 300px !important;
+  width: 300px !important;
+}
+
+.container-one .artpiece
+{
+  position: absolute;
+  height: 100%;
+  width: 1200px;
+  top: 0;
+  right: 0;
+  background-image: url('../img/newindex/img5.jpg');
+  background-color: #111;
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.secret
+{
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  display: block;
+  line-height: 40px;
+  font-size: 1.7em;
+  color: white !important;
+  -webkit-transform: rotate(60deg);
+  transform: rotate(60deg);
+  position: absolute;
+  left: 100px;
+  top: 110px;
+  z-index: 14;
+  background: #ef374f;
+}
+
+.container-two .section-box img
+{
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* END Container One */
+
+/* Container Two */
+
+.container-two
+{
+  position: relative;
+}
+
+#abt1c, #abt2c, #abt3c{display: none;}
+
+#abt2c img
+{
+  position: absolute;
+  top: 150px;
+  right: 0;
+  left: auto;
+  width: auto;
+  height: 150px;
+}
+
+#abt2c .textarea
+{
+  position: absolute;
+  top: 325px;
+  right: 0;
+}
+
+/* END Container Two */
+
+/* Container Three */
+
+.container-three
+{
+  position: relative;
+}
+
+.container-three .section-links
+{
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+.container-three .section-links a
+{
+  font-size: 2.5em;
+  color: white !important;
+  float: left;
+  padding: 5px 20px !important;
+}
+
+.container-three .section-links p
+{
+  font-size: 2.5em;
+  color: white !important;
+  float: left;
+  padding: 5px 10px !important;
+}
+
+.container-three .section-links a:hover
+{
+  background-color: white;
+  color: #252525 !important;
+  cursor: pointer;
+}
+
+.area-album
+{
+  display: block;
+}
+
+.area-logo, .area-display{display: none;}
+
+.container-three .item
+{
+  height: 400px !important;
+  width: 400px !important;
+  float: left;
+}
+
+#lbm1c
+{
+  display: block;
+}
+
+#lbm2c, #lbm3c
+{
+  display: none;
+}
+
+#lbm1c .section-box img
+{
+  position: relative !important;
+}
+
+.album-carousel
+{
+  position: absolute !important;
+  top: 150px;
+  z-index: 11 !important;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.container-three .section-box div
+{
+  height: auto !important;
+}
+
+.album-carousel:active
+{
+  cursor: -webkit-grabbing !important;
+  cursor: grabbing !important;
+}
+
+/* END Container Three */
+
+/* Container Four */
+
+.container-four
+{
+  position: relative;
+}
+
+.container-four .section-links
+{
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+.container-four .section-links a
+{
+  font-size: 2.5em;
+  color: white !important;
+  float: left;
+  padding: 5px 20px !important;
+}
+
+.container-four .section-links p
+{
+  font-size: 2.5em;
+  color: white !important;
+  float: left;
+  padding: 5px 10px !important;
+}
+
+.container-four .section-links a:hover
+{
+  background-color: white;
+  color: #252525 !important;
+  cursor: pointer;
+}
+
+.area-projects{display: block;}
+
+.area-skills, .area-work{display: none;}
+
+/* END Container Four */
+
+/* Container Five */
+
+.container-five
+{
+  position: relative;
+}
+
+.container-five .section-links
+{
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+.container-five .section-links a
+{
+  font-size: 2.5em;
+  color: white !important;
+  float: left;
+  padding: 5px 20px !important;
+}
+
+.container-five .section-links p
+{
+  font-size: 2.5em;
+  color: white !important;
+  float: left;
+  padding: 5px 10px !important;
+}
+
+ .section-links a:hover
+{
+  background-color: white;
+  color: #252525 !important;
+  cursor: pointer;
+}
+
+.area-twitter{display: block;}
+
+.area-discord, .area-other
+{
+  display: none;
+}
+
+.container-five .section-box img
+{
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* END Container Five */
+
+/* Container General */
+
+.nums
+{
+  position: fixed;
+  bottom: 20px;
+  left: calc(50% - 150px);
+  z-index: 20;
+  width: 300px;
+}
+
+.nums a
+{
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+
+.nums a:hover
+{
+  background-color: white;
+  cursor: pointer;
+}
+
+.nums a img
+{
+  width: 100%;
+  height: 100%;
+}
+
+.navnames
+{
+  position: fixed;
+  bottom: 85px;
+  z-index: 20;
+  width: 100%;
+}
+
+.navnames span
+{
+  font-size: 1.7em;
+  background-color: white;
+  display: none;
+  position: absolute;
+  padding: 5px 15px !important;
+}
+
+#name1{left: calc(50% - 175px); bottom: 0px;}
+#name2{left: calc(50% - 117px); bottom: 0px;}
+#name3{left: calc(50% - 62px); bottom: 0px;}
+#name4{left: calc(50% - -14px); bottom: 0px;}
+#name5{left: calc(50% - -50px); bottom: 0px;}
+
+.section-title
+{
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  font-size: 6em;
+  color: white !important;
+  position: relative;
+  text-align: right;
+  top: 230px;
+  left: 50px;
+  width: 80px;
+  margin: 0;
+  padding: 0 !important;
+}
+
+.section-box
+{
+  position: absolute;
+  bottom: 175px;
+  right: 50px;
+  height: calc(100% - 225px);
+  width: 80%;
+}
+
+.section-box div
+{
+  height: 100%;
+}
+
+.container-three .section-title{top: 270px;}
+.container-four .section-title{top: 140px;}
+.container-five .section-title{top: 320px;}
+
+.back-up
+{
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  height: 30px;
+  width: 30px;
+}
+
+.back-up:hover
+{
+  cursor: pointer;
+}
+
+.linkbox-title
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 5em;
+  color: white !important;
+  text-align: left;
+}
+
+.linktitle
+{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 4em;
+  color: white !important;
+  text-align: right;
+}
+
+.goto
+{
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-size: 1.5em;
+  color: white !important;
+  text-align: right;
+  padding: 5px 10px !important;
+}
+
+.goto:hover
+{
+  background-color: white;
+  color: #111 !important;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.linkbox
+{
+  width: auto !important;
+  height: auto !important;
+  display: inline-block;
+  margin-top: 200px;
+}
+
+.content
+{
+  width: 80% !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.container-three .linkbox,
+.container-four .linkbox
+{
+  width: auto !important;
+  height: auto !important;
+  display: inline-block;
+  margin-top: 120px;
+}
+
+.container-two .linkbox
+{
+  width: auto !important;
+  height: auto !important;
+  display: inline-block;
+  margin-top: 240px;
+}
+
+a.link
+{
+  font-size: 2em;
+  color: white !important;
+  display: block;
+  line-height: 40px;
+  padding: 5px 10px !important;
+  padding-right: 100px !important;
+}
+
+a.link:hover
+{
+  background-color: white;
+  color: #111 !important;
+  cursor: pointer;
+}
+
+.chains
+{
+  background-image: url('../img/svg/chains.svg');
+  background-repeat: repeat-y;
+  width: 20px;
+  height: 500%;
+  position: absolute;
+  top: 0;
+  left: 180px;
+  z-index: 10;
+}
+
+.ttl
+{
+  font-size: 2em;
+  text-align: right;
+  color: white !important;
+  display: block;
+}
+
+.subttl
+{
+  font-size: 1.4em;
+  text-align: right;
+  color: white !important;
+  display: block;
+}
+
+/* END Container General */
+
+/* NOT READY */
+
+div.notready
+{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: #ef374f;
+}
+
+.notready span.notsuitable
+{
+  color: white !important;
+  font-size: 3em;
+  position: absolute;
+  display: block;
+  bottom: 70px;
+  left: 70px;
+}
+
+.notready span.nothappy
+{
+  color: white !important;
+  font-size: 20em;
+  position: absolute;
+  display: block;
+  top: 40px;
+  left: 70px;
+}
+
+.notready span.cls
+{
+  color: white !important;
+  font-size: 2.4em;
+  position: absolute;
+  display: block;
+  padding: 5px 20px !important;
+  top: 40px;
+  right: 70px;
+}
+
+.notready span.cls:hover
+{
+  color: #252525 !important;
+  background: white;
+  cursor: pointer;
+}
+
+.notready span.thelogo
+{
+  width: 150px;
+  height: 150px;
+  bottom: 70px;
+  right: 70px;
+  position: absolute;
+  display: block;
+}
+
+/* END NOT READY */
