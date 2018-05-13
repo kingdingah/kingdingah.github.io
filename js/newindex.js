@@ -30,18 +30,29 @@ $(document).ready(function() {
       }
   });
 
-  $("span.cls").click(function() {
-    $("div.notready").hide();
+  $("span.cls").click(function()
+  {
+    if($("div.notready").is(":visible"))
+    {
+      $("div.notready").hide();
+      $("body").css("overflow","auto");
+    }
+
+    if($("div.lightbox").is(":visible"))
+    {
+      $("div.lightbox").hide();
+      $("body").css("overflow","auto");
+    }
   });
 
-  $("span.nothappy").animate({left: 70}, 300);
-
   $('.container-three .owl-carousel').owlCarousel({
-    autoplay:true,
-    loop: true,
+    loop: false,
     margin: 0,
     dots: false,
-    navigation: false,
+    pagination:false,
+    nav: true,
+    nav: true,
+    navText: ["<span class='prev'>Previous</span>","<span class='next'>Next</span>"],
     autoplaySpeed: 1000,
     autoplayTimeout: 3000
 });
@@ -128,6 +139,9 @@ $(document).ready(function() {
     $('.area-logo').css({'display':'block'});
     $('.area-album').css({'display':'none'});
     $('.area-display').css({'display':'none'});
+    $('.area-album .linktitle').html('2018');
+    $('.area-album .goto').attr('href', 'logo.html');
+    $('.area-album .goto').html('View All Logos');
   });
 
   $('#lbm').click(function() {
@@ -135,13 +149,18 @@ $(document).ready(function() {
     $('.area-album').css({'display':'block'});
     $('.area-display').css({'display':'none'});
     $('.area-album .linktitle').html('2018');
+    $('.area-album .goto').attr('href', 'album.html');
+    $('.area-album .goto').html('View All Albums');
     $('#lbm1c').css({'display':'block'});
   });
 
   $('#dsply').click(function() {
-    $('.area-logo').css({'display':'none'})
-    $('.area-album').css({'display':'none'})
-    $('.area-display').css({'display':'block'})
+    $('.area-logo').css({'display':'none'});
+    $('.area-album').css({'display':'none'});
+    $('.area-display').css({'display':'block'});
+    $('.area-album .linktitle').html('2018');
+    $('.area-album .goto').attr('href', 'display.html');
+    $('.area-album .goto').html('View All Displays');
   });
 
   $('#prjcts').click(function() {
@@ -306,6 +325,20 @@ $(document).ready(function() {
     $('#lbm1c').css({'display':'none'});
     $('#lbm2c').css({'display':'none'});
     $('#lbm3c').css({'display':'block'});
+  });
+
+  $(".container-three .item").hover(function() {
+    $(this).find('.overlay').show();
+    $(this).find('img').css({'-webkit-filter':'grayscale(100%)','filter':'grayscale(100%)'});
+  }, function() {
+    $(this).find('.overlay').hide();
+    $(this).find('img').css({'-webkit-filter':'grayscale(0%)','filter':'grayscale(0%)'})
+  });
+
+  $(".overlay a").click(function() {
+    $("body").css("overflow","hidden");
+    $(".lightbox").show();
+    $(".lightbox img").attr("src", $(this).parent().siblings('img').attr("src"));
   });
 
 });
