@@ -525,6 +525,7 @@ div.owl-carousel, .owl-stage, .owl-item
   color: white !important;
   text-align: right;
   padding: 5px 10px !important;
+  z-index: 50;
 }
 
 .goto:hover
@@ -590,7 +591,6 @@ a.link:hover
   background-image: url('../img/svg/chains.svg');
   background-repeat: repeat-y;
   width: 20px;
-  height: 500%;
   position: absolute;
   top: 0;
   left: 180px;
@@ -612,6 +612,62 @@ a.link:hover
   color: white !important;
   display: block;
 }
+
+.backtohome
+{
+  position: absolute;
+  top: 70px;
+  left: 110px;
+  font-size: 2em;
+  color: white !important;
+  display: block;
+  line-height: 40px;
+  padding: 5px 10px !important;
+  padding-right: 100px !important;
+}
+
+.backtohome:hover
+{
+  background-color: white;
+  color: #111 !important;
+  cursor: pointer;
+  text-decoration: none
+}
+
+.pagetitle
+{
+  position: absolute;
+  top: 30px;
+  left: -80px;
+  z-index: 10;
+}
+
+.pagetitle span
+{
+  font-size: 4em;
+  color: white !important;
+  display: inline-block;
+  line-height: 40px;
+  padding: 10px 10px !important;
+}
+
+.pagetitle a
+{
+  font-size: 1.6em;
+  color: white !important;
+  display: inline-block;
+  line-height: 40px;
+  padding: 5px 10px !important;
+}
+
+.pagetitle a:hover
+{
+  background-color: white;
+  color: #111 !important;
+  cursor: pointer;
+  text-decoration: none
+}
+
 
 /* END Container General */
 
@@ -693,7 +749,7 @@ div.notready
   z-index: 30;
   color: white !important;
   text-align: center;
-  padding-top: calc(50% - 50px) !important;
+  padding-top: calc(50% - 25px) !important;
 }
 
 .overlay:hover
@@ -703,7 +759,9 @@ div.notready
 
 .overlay a
 {
-  padding: 5px 15px !important;
+  height: 50px;
+  line-height: 50px;
+  padding: 0px 15px !important;
 }
 
 .overlay a:hover

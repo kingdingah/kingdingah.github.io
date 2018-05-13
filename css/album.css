@@ -1,0 +1,85 @@
+.album-row
+{
+  width: 100%;
+  padding: 0 12.5% !important;
+  position: relative;
+  display: inline-block;
+  height: auto;
+}
+
+.album-box
+{
+  background-color: #111;
+}
+
+#album2018, #album2016
+{
+  background-color: #222;
+}
+
+#album2017
+{
+  background-color: #111;
+}
+
+.album-box .section-title
+{
+  z-index: 100;
+}
+
+.album-row .overlay
+{
+  width: 400px;
+  height: 400px;
+}
+
+.album-container
+{
+  height: auto !important;
+}
+
+.album-row .item
+{
+  width: 20%;
+  margin: 2.5%;c
+  height: auto;
+  float: left;
+}
+
+.album-box .section-title
+{
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  font-size: 6em;
+  color: white !important;
+  position: absolute;
+  text-align: right;
+  top: 230px;
+  left: 50px;
+  width: 80px;
+  margin: 0;
+  padding: 0 !important;
+}
+
+.back2home
+{
+  position: absolute;
+  top: 30px;
+  display: block;
+  left: 200px;
+  color: white !important;
+  padding: 5px 15px !important;
+  z-index: 10;
+}
+
+.album-row .section-subtitle
+{
+  position: relative;
+  top: 30px;
+  display: block;
+  text-align: right;
+  font-size: 2.5em;
+  color: white !important;
+  padding: 5px 15px !important;
+  z-index: 10;
+}

@@ -341,4 +341,17 @@ $(document).ready(function() {
     $(".lightbox img").attr("src", $(this).parent().siblings('img').attr("src"));
   });
 
+  if($("title").text() == "Albums")
+  {
+    $(".chains").css({
+      'height':$("div.album-container").height()
+    })
+  }
+  else if($("title").text() == "Home")
+  {
+    $(".chains").css({
+      'height':($("html").height()*5)
+    })
+  }
+
 });
