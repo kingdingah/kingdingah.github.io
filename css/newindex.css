@@ -239,8 +239,8 @@ div.owl-carousel, .owl-stage, .owl-item
 
 .container-three .section-box div.item
 {
-  height: 480px !important;
-  width: 400px !important;
+  height: 480px;
+  width: 400px;
   float: left;
 }
 
@@ -391,7 +391,7 @@ div.owl-carousel, .owl-stage, .owl-item
   height: auto;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -15px;
 }
 
 /* END Container Five */
@@ -740,7 +740,7 @@ div.notready
 
 .overlay
 {
-  height: 400px !important;
+  height: 400px;
   width: 400px;
   background-color: rgba(238, 55, 79,0.8);
   position: absolute;
@@ -754,7 +754,7 @@ div.notready
 
 .overlay:hover
 {
-  cursor: pointer !important;
+  cursor: default !important;
 }
 
 .overlay a
@@ -768,6 +768,7 @@ div.notready
 {
   background-color: white;
   color: #252525 !important;
+  cursor: pointer !important;
 }
 
 .lightbox
@@ -838,6 +839,11 @@ div.notready
 
 @media (min-width: 1200px) and (max-width: 1440px)
 {
+  .chains
+  {
+    left: 155px;
+  }
+
   .container-one .links div
   {
     font-size: 3em;
@@ -892,9 +898,116 @@ div.notready
   {
     margin-top:90px;
   }
+
+  .container-three .section-box div.item
+  {
+    width: 250px !important;
+    height: 325px;
+  }
+
+  .overlay
+  {
+    width: 250px !important;
+    height: 250px !important;
+    font-size: 1.8em;
+    padding-top: calc(50% - 36px) !important;
+  }
+
+  .album-carousel
+  {
+    top: 100px;
+  }
+
+  .goto
+  {
+    bottom: -55px;
+  }
+
+  .design-title
+  {
+    font-size: 1.6em;
+  }
+
+  .design-subtitle
+  {
+    font-size: 1.2em;
+  }
+
+  .overlay a
+  {
+    height: 36px;
+    line-height: 36px;
+  }
+
   .linktitle
   {
+    top: 15px;
     font-size: 3em;
+  }
+
+  .container-three .section-links,
+  .container-four .section-links,
+  .container-five .section-links
+  {
+    bottom: 10px;
+  }
+
+  .container-three .section-links a,
+  .container-four .section-links a,
+  .container-five .section-links a
+  {
+    font-size: 1.8em;
+  }
+
+  .container-three .section-links p,
+  .container-four .section-links p,
+  .container-five .section-links p
+  {
+    font-size: 1.8em;
+  }
+
+  #abt2c img
+  {
+    top: 110px;
+    right: 30px;
+    height: 120px;
+  }
+
+  #abt2c .textarea
+  {
+    top: 240px;
+    right: 30px;
+  }
+
+  .ttl
+  {
+    font-size: 1.6em;
+  }
+
+  .subttl
+  {
+    font-size: 1.2em;
+  }
+
+  .lightbox img
+  {
+    top: calc(50% - 300px);
+    left: calc(50% - 300px);
+    width: 600px;
+    height: 600px;
+  }
+
+  .lightbox span.cls
+  {
+    font-size: 1.8em;
+  }
+
+  #twttrc, #dscrdc, #otherc
+  {
+    position: absolute;
+    right: 30px;
+    top: 120px;
+    font-size: 1.4em !important;
   }
 }
 

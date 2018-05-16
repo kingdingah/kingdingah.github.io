@@ -64,12 +64,19 @@
 .back2home
 {
   position: absolute;
-  top: 30px;
+  top: 50px;
   display: block;
-  left: 200px;
+  left: 180px;
   color: white !important;
   padding: 5px 15px !important;
   z-index: 10;
+}
+
+.back2home:hover
+{
+  background-color: white;
+  color: #252525 !important;
+  text-decoration: none;
 }
 
 .album-row .section-subtitle

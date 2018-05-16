@@ -76,31 +76,31 @@ $(document).ready(function() {
   $("#num1").hover(function() {
       $("#name1").css({'display':'inline-block'});
     }, function() {
-      $("#name1").css({'display':'none'});
+      $("#name1").hide();
   });
 
   $("#num2").hover(function() {
       $("#name2").css({'display':'inline-block'});
     }, function() {
-      $("#name2").css({'display':'none'});
+      $("#name2").hide();
   });
 
   $("#num3").hover(function() {
       $("#name3").css({'display':'inline-block'});
     }, function() {
-      $("#name3").css({'display':'none'});
+      $("#name3").hide();
   });
 
   $("#num4").hover(function() {
       $("#name4").css({'display':'inline-block'});
     }, function() {
-      $("#name4").css({'display':'none'});
+      $("#name4").hide();
   });
 
   $("#num5").hover(function() {
       $("#name5").css({'display':'inline-block'});
     }, function() {
-      $("#name5").css({'display':'none'});
+      $("#name5").hide();
   });
 
 
@@ -116,38 +116,38 @@ $(document).ready(function() {
 
   $('#abt1').click(function() {
     $('.area-about .linktitle').html('General');
-    $('#abt1c').css({'display':'block'});
-    $('#abt2c').css({'display':'none'});
-    $('#abt3c').css({'display':'none'});
+    $('#abt1c').show();
+    $('#abt2c').hide();
+    $('#abt3c').hide();
   });
 
   $('#abt2').click(function() {
     $('.area-about .linktitle').html('Education');
-    $('#abt1c').css({'display':'none'});
-    $('#abt2c').css({'display':'block'});
-    $('#abt3c').css({'display':'none'});
+    $('#abt1c').hide();
+    $('#abt2c').show();
+    $('#abt3c').hide();
   });
 
   $('#abt3').click(function() {
     $('.area-about .linktitle').html('Interests');
-    $('#abt1c').css({'display':'none'});
-    $('#abt2c').css({'display':'none'});
-    $('#abt3c').css({'display':'block'});
+    $('#abt1c').hide();
+    $('#abt2c').hide();
+    $('#abt3c').show();
   });
 
   $('#lg').click(function() {
-    $('.area-logo').css({'display':'block'});
-    $('.area-album').css({'display':'none'});
-    $('.area-display').css({'display':'none'});
+    $('.area-logo').show();
+    $('.area-album').hide();
+    $('.area-display').hide();
     $('.area-album .linktitle').html('2018');
     $('.area-album .goto').attr('href', 'logo.html');
     $('.area-album .goto').html('View All Logos');
   });
 
   $('#lbm').click(function() {
-    $('.area-logo').css({'display':'none'});
-    $('.area-album').css({'display':'block'});
-    $('.area-display').css({'display':'none'});
+    $('.area-logo').hide();
+    $('.area-album').show();
+    $('.area-display').hide();
     $('.area-album .linktitle').html('2018');
     $('.area-album .goto').attr('href', 'album.html');
     $('.area-album .goto').html('View All Albums');
@@ -155,124 +155,146 @@ $(document).ready(function() {
   });
 
   $('#dsply').click(function() {
-    $('.area-logo').css({'display':'none'});
-    $('.area-album').css({'display':'none'});
-    $('.area-display').css({'display':'block'});
+    $('.area-logo').hide();
+    $('.area-album').hide();
+    $('.area-display').show();
     $('.area-album .linktitle').html('2018');
     $('.area-album .goto').attr('href', 'display.html');
     $('.area-album .goto').html('View All Displays');
   });
 
   $('#prjcts').click(function() {
-    $('.area-projects').css({'display':'block'});
-    $('.area-work').css({'display':'none'});
-    $('.area-skills').css({'display':'none'});
+    $('.area-projects').show();
+    $('.area-work').hide();
+    $('.area-skills').hide();
   });
 
   $('#wrk').click(function() {
-    $('.area-projects').css({'display':'none'});
-    $('.area-work').css({'display':'block'});
-    $('.area-skills').css({'display':'none'});
+    $('.area-projects').hide();
+    $('.area-work').show();
+    $('.area-skills').hide();
   });
 
   $('#sklls').click(function() {
-    $('.area-projects').css({'display':'none'})
-    $('.area-work').css({'display':'none'})
-    $('.area-skills').css({'display':'block'})
+    $('.area-projects').hide();
+    $('.area-work').hide();
+    $('.area-skills').show();
   });
 
   $('#twttr').click(function() {
-    $('.area-twitter').css({'display':'block'});
-    $('.area-discord').css({'display':'none'});
-    $('.area-other').css({'display':'none'});
+    $('.area-twitter').show();
+    $('.area-discord').hide();
+    $('.area-other').hide();
     $('.area-twitter .goto').html('Go To @kingdingah');
     $('.area-twitter .linktitle').html('@kingdingah');
     $('.area-twitter .goto').attr("href", "https://www.twitter.com/kingdingah");
+    $('#twttrc .subttl').html('My main account where I ramble about everything<br />Mainly music<br />I talk about music a lot<br />Also contains various other opinions<br /><br />Enjoy');
   });
 
   $("#twttr1").click(function() {
     $('.area-twitter .goto').html('Go To @kingdingah');
     $('.area-twitter .linktitle').html('@kingdingah');
     $('.area-twitter .goto').attr("href", "https://www.twitter.com/kingdingah");
+    $('#twttrc .subttl').html('My main account where I ramble about everything<br />Mainly music<br />I talk about music a lot<br />Also contains various other opinions<br /><br />Enjoy');
   });
 
   $("#twttr2").click(function() {
     $('.area-twitter .goto').html('Go To @kingodes');
     $('.area-twitter .linktitle').html('@kingodes');
     $('.area-twitter .goto').attr("href", "https://www.twitter.com/kingodes");
+    $('#twttrc .subttl').html('Where I sometimes post my designs<br/>Emphasis on sometimes<br/>You can still pm there about commissions and design queries<br/><br/>My Ello page is better though');
   });
 
   $("#twttr3").click(function() {
     $('.area-twitter .goto').html('Go To @kingosplace');
     $('.area-twitter .linktitle').html('@kingosplace');
     $('.area-twitter .goto').attr("href", "https://www.twitter.com/kingosplace");
+    $('#twttrc .subttl').html('Where I come to scream<br/>Things get dark here</br></br>Only request if I know you well');
   });
 
   $('#dscrd').click(function() {
-    $('.area-twitter').css({'display':'none'});
-    $('.area-discord').css({'display':'block'});
-    $('.area-other').css({'display':'none'});
+    $('.area-twitter').hide();
+    $('.area-discord').show();
+    $('.area-other').hide();
     $('.area-discord .goto').html('Add Me on Discord');
     $('.area-discord .linktitle').html('kingo#1215');
     $('.area-discord .goto').attr("href", "#");
+    $('#dscrdc .subttl').html('Where I am arguably most active.<br/>Whenever I\'m awake I\'ll definitely get your message.<br/><br/>Just please do not add me for small talk only');
   });
 
   $("#dscrd1").click(function() {
     $('.area-discord .goto').html('Add Me on Discord');
     $('.area-discord .linktitle').html('kingo#1215');
     $('.area-discord .goto').attr("href", "#");
+    $('#dscrdc .subttl').html('Where I am arguably most active.<br/>Whenever I\'m awake I\'ll definitely get your message.<br/><br/>Just please don\'t do add me for small talk only');
   });
 
   $("#dscrd2").click(function() {
     $('.area-discord .goto').html('Join My Server');
     $('.area-discord .linktitle').html('Kingo\'s Boy Club');
     $('.area-discord .goto').attr("href", "https://discord.gg/zuRzRBs");
+    $('#dscrdc .subttl').html('My server for boys, by boys<br/>Channels for art, shitposts, music and games<br/>Dedicated voice and text channels for Cards Against Humanity</br>Lots of channels for NSFW lovers, though restricted to a role<br/><br/>Please read the rules before you join');
   });
 
   $('#other').click(function() {
-    $('.area-twitter').css({'display':'none'});
-    $('.area-discord').css({'display':'none'});
-    $('.area-other').css({'display':'block'});
+    $('.area-twitter').hide();
+    $('.area-discord').hide();
+    $('.area-other').show();
     $('.area-other .goto').html('Send Request to dingah');
     $('.area-other .linktitle').html('dingah');
     $('.area-other .goto').attr("href", "https://www.steamcommunity.com/id/dingah");
+    $('#otherc .subttl').html('Where I be shooting boys.<br/>Really only playing Team Fortress 2 on there<br/> Doesn\'t mean I just play TF2.<br/>If we share a game, we can definitely play it together<br/><br/>Don\'t add me for no reason');
   });
 
   $('#other1').click(function() {
     $('.area-other .goto').html('Send Request to dingah');
     $('.area-other .linktitle').html('dingah');
     $('.area-other .goto').attr("href", "https://www.steamcommunity.com/id/dingah");
+    $('#otherc .subttl').html('Where I be shooting boys.<br/>Really only playing Team Fortress 2 on there<br/> Doesn\'t mean I just play TF2.<br/>If we share a game, we can definitely play it together<br/><br/>Don\'t add me for no reason');
   });
 
   $('#other2').click(function() {
     $('.area-other .goto').html('Add dingah on Telegram');
     $('.area-other .linktitle').html('dingah');
     $('.area-other .goto').attr("href", "https://t.me/dingah");
+    $('#otherc .subttl').html('Not as active on here, than Twitter or Discord<br/>More of a back up if you somehow don\'t use the latter two.<br/><br/>Sorry if I read your message and don\'t reply :( <br/>I\'m probably busy working');
   });
 
   $('#other3').click(function() {
     $('.area-other .goto').html('Follow dingah');
     $('.area-other .linktitle').html('dingah');
     $('.area-other .goto').attr("href", "https://www.ello.co/dingah");
+    $('#otherc .subttl').html('Where I post all my concept art and commissioned album artwork<br/><br/>Not much else to say other than that');
   });
 
   $('#other4').click(function() {
     $('.area-other .goto').html('Follow kingdingah');
     $('.area-other .linktitle').html('kingdingah');
     $('.area-other .goto').attr("href", "https://kingdingah.tumblr.com/");
+    $('#otherc .subttl').html('My main tumblr, where I reblog stupid shit everyday<br/>Or insightful content that resonates with me<br/><br/>Been on this shit since 2010, damn..');
   });
 
   $('#other5').click(function() {
     $('.area-other .goto').html('View My Listography');
     $('.area-other .linktitle').html('kingdingah');
     $('.area-other .goto').attr("href", "https://www.listography.com/kingdingah");
+    $('#otherc .subttl').html('Where you can find some personal lists and more personal info<br/>And my bucket list of bad dreams<br/<br/>Contains other stuff too, but I forget what');
   });
 
   $('#other6').click(function() {
+    $('.area-other .goto').html('View My LastFM');
+    $('.area-other .linktitle').html('kingdingah');
+    $('.area-other .goto').attr("href", "https://www.last.fm/user/kingdingah");
+    $('#otherc .subttl').html('Where you can find out what I have been listening too recently<br/>And how much I listen to Tim Hecker over any other artist<br/><br/>Some of my listens are YT vids so, sorry about those');
+  });
+
+  $('#other7').click(function() {
     $('.area-other .goto').html('View My Discogs');
     $('.area-other .linktitle').html('kingdingah');
     $('.area-other .goto').attr("href", "https://www.discogs.com/user/kingdingah");
+    $('#otherc .subttl').html('All my owned music, both digital and physical<br/>Updated every couple months or so<br/>Not a big collector but I hope to be in future<br>/<br/>Still need every available version of Harmony In Ultraviolet on this site');
   });
+
 
   $("#num1").hover(function() {
     $(this).attr('src', "img/svg/num/num1b.svg");
@@ -308,23 +330,23 @@ $(document).ready(function() {
 
   $('#lbm1').click(function() {
     $('.area-album .linktitle').html('2018');
-    $('#lbm1c').css({'display':'block'});
-    $('#lbm2c').css({'display':'none'});
-    $('#lbm3c').css({'display':'none'});
+    $('#lbm1c').show();
+    $('#lbm2c').hide();
+    $('#lbm3c').hide();
   });
 
   $('#lbm2').click(function() {
     $('.area-album .linktitle').html('2017');
-    $('#lbm1c').css({'display':'none'});
-    $('#lbm2c').css({'display':'block'});
-    $('#lbm3c').css({'display':'none'});
+    $('#lbm1c').hide();
+    $('#lbm2c').show();
+    $('#lbm3c').hide();
   });
 
   $('#lbm3').click(function() {
     $('.area-album .linktitle').html('2016');
-    $('#lbm1c').css({'display':'none'});
-    $('#lbm2c').css({'display':'none'});
-    $('#lbm3c').css({'display':'block'});
+    $('#lbm1c').hide();
+    $('#lbm2c').hide();
+    $('#lbm3c').show();
   });
 
   $(".container-three .item").hover(function() {
@@ -334,6 +356,11 @@ $(document).ready(function() {
     $(this).find('.overlay').hide();
     $(this).find('img').css({'-webkit-filter':'grayscale(0%)','filter':'grayscale(0%)'})
   });
+
+  $(".overlay").css({
+    'width':$(".container-three .section-box div.item img").width(),
+    'height':$(".container-three .section-box div.item img").height()
+  })
 
   $(".overlay a").click(function() {
     $("body").css("overflow","hidden");
