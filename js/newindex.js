@@ -371,7 +371,7 @@ $(document).ready(function() {
   if($("title").text() == "Albums")
   {
     $(".chains").css({
-      'height':$("div.album-container").height()
+      'height':$(".container-one").height()
     })
   }
   else if($("title").text() == "Home")
