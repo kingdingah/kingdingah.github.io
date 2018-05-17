@@ -126,6 +126,31 @@ $(document).ready(function() {
     $('#abt1c').hide();
     $('#abt2c').show();
     $('#abt3c').hide();
+    $('.area-about .goto').html('View Modules');
+    $("#abt2c .tabular").hide();
+    $("#abt2c img").show();
+    $('.area-about .linktitle').html('Education');
+    $("#abt2c .textarea").show();
+    $('.area-about .goto').show();
+    $('.area-about .toEdu').hide();
+  });
+
+  $('.area-about .goto').click(function() {
+    $("#abt2c .tabular").show();
+    $("#abt2c img").hide();
+    $('.area-about .linktitle').html('<span class="ghost">Modules</span> / Education');
+    $("#abt2c .textarea").hide();
+    $('.area-about .goto').hide();
+    $('.area-about .toEdu').show();
+  });
+
+  $('.area-about .toEdu, .ghost').click(function() {
+    $("#abt2c .tabular").hide();
+    $("#abt2c img").show();
+    $('.area-about .linktitle').html('Education');
+    $("#abt2c .textarea").show();
+    $('.area-about .goto').show();
+    $('.area-about .toEdu').hide();
   });
 
   $('#abt3').click(function() {
@@ -133,6 +158,8 @@ $(document).ready(function() {
     $('#abt1c').hide();
     $('#abt2c').hide();
     $('#abt3c').show();
+    $('.area-about .goto').hide();
+    $('#abt3c .tabular').show();
   });
 
   $('#lg').click(function() {

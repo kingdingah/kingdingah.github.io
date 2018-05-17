@@ -167,7 +167,17 @@ div.owl-carousel, .owl-stage, .owl-item
   position: relative;
 }
 
+.container-two .toEdu
+{
+  display: none;
+}
+
 #abt1c, #abt2c, #abt3c{display: none;}
+
+.ghost
+{
+  opacity: 0.65;
+}
 
 #abt2c img
 {
@@ -179,12 +189,44 @@ div.owl-carousel, .owl-stage, .owl-item
   height: 150px;
 }
 
-#abt2c .textarea
+#abt2c .textarea, #abt3c .textarea
 {
   position: absolute;
   top: 325px;
   right: 0;
 }
+
+#abt2c .tabular, #abt3c .tabular
+{
+  position: absolute;
+  width: 100%;
+  right: 0;
+  display: none;
+}
+
+#abt2c .tabular table, #abt3c .tabular table
+{
+  position: absolute;
+  top: 100px;
+}
+
+#abt2c .tabular table td, #abt3c .tabular table td
+{
+  width: 40%;
+  height: 50px;
+  color: white !important;
+  font-size: 1.4em;
+  text-align: right;
+  line-height: 50px;
+  padding-right: 15px !important;
+}
+
+#abt2c .tabular table td:hover, #abt3c .tabular table td:hover
+{
+  background-color: white;
+  color: #252525 !important;
+}
+
 
 /* END Container Two */
 
@@ -222,6 +264,13 @@ div.owl-carousel, .owl-stage, .owl-item
 {
   background-color: white;
   color: #252525 !important;
+  cursor: pointer;
+}
+
+.container-three .section-links a:active
+{
+  background-color: white;
+  color: #ef374f !important;
   cursor: pointer;
 }
 
@@ -516,7 +565,7 @@ div.owl-carousel, .owl-stage, .owl-item
   text-align: right;
 }
 
-.goto
+.goto, .toEdu
 {
   position: absolute;
   bottom: 30px;
@@ -528,7 +577,7 @@ div.owl-carousel, .owl-stage, .owl-item
   z-index: 50;
 }
 
-.goto:hover
+.goto:hover,.toEdu:hover
 {
   background-color: white;
   color: #111 !important;
@@ -586,6 +635,13 @@ a.link:hover
   cursor: pointer;
 }
 
+a.link:active
+{
+  background-color: white;
+  color: #ef374f !important;
+  cursor: pointer;
+}
+
 .chains
 {
   background-image: url('../img/svg/chains.svg');
@@ -597,12 +653,17 @@ a.link:hover
   z-index: 10;
 }
 
-.ttl
+a.ttl, span.ttl
 {
   font-size: 2em;
   text-align: right;
   color: white !important;
   display: block;
+}
+
+span.ttl
+{
+  font-size: 3em;
 }
 
 .subttl
@@ -902,7 +963,7 @@ div.notready
   .container-three .section-box div.item
   {
     width: 250px !important;
-    height: 325px;
+    height: 350px;
   }
 
   .overlay
@@ -918,19 +979,26 @@ div.notready
     top: 100px;
   }
 
-  .goto
+  .goto, .toEdu
   {
-    bottom: -55px;
+    bottom: -80px;
   }
 
   .design-title
   {
     font-size: 1.6em;
+    height: 30px;
+    line-height: 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   .design-subtitle
   {
     font-size: 1.2em;
+    height: 40px;
+    line-height: 20px;
   }
 
   .overlay a
@@ -979,7 +1047,7 @@ div.notready
     right: 30px;
   }
 
-  .ttl
+  a.ttl
   {
     font-size: 1.6em;
   }
@@ -1009,6 +1077,17 @@ div.notready
     top: 120px;
     font-size: 1.4em !important;
   }
+
+  .container-one .artpiece
+  {
+    width: 750px;
+  }
+
+  #name1{left: calc(50% - 155px); bottom: 0px;}
+  #name2{left: calc(50% - 107px); bottom: 0px;}
+  #name3{left: calc(50% - 62px); bottom: 0px;}
+  #name4{left: calc(50% - -4px); bottom: 0px;}
+  #name5{left: calc(50% - -30px); bottom: 0px;}
 }
 
 @media (min-width: 990px) and (max-width: 1200px)
