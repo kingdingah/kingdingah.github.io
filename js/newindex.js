@@ -126,7 +126,7 @@ $(document).ready(function() {
     $('#abt1c').hide();
     $('#abt2c').show();
     $('#abt3c').hide();
-    $('.area-about .goto').html('View Modules');
+    $('.area-about .goto').html('View Course Modules');
     $("#abt2c .tabular").hide();
     $("#abt2c img").show();
     $('.area-about .linktitle').html('Education');
@@ -213,28 +213,28 @@ $(document).ready(function() {
     $('.area-discord').hide();
     $('.area-other').hide();
     $('.area-twitter .goto').html('Go To @kingdingah');
-    $('.area-twitter .linktitle').html('@kingdingah');
+    $('.area-twitter .linktitle').html('<span class="ghost">Twitter</span> / @kingdingah');
     $('.area-twitter .goto').attr("href", "https://www.twitter.com/kingdingah");
-    $('#twttrc .subttl').html('My main account where I ramble about everything<br />Mainly music<br />I talk about music a lot<br />Also contains various other opinions<br /><br />Enjoy');
+    $('#twttrc .subttl').html('My main account where I ramble about everything<br />Mainly music<br />I talk about music a lot<br />Also contains various other opinions<br /><br />Eight years of nonsense');
   });
 
   $("#twttr1").click(function() {
     $('.area-twitter .goto').html('Go To @kingdingah');
-    $('.area-twitter .linktitle').html('@kingdingah');
+    $('.area-twitter .linktitle').html('<span class="ghost">Twitter</span> / @kingdingah');
     $('.area-twitter .goto').attr("href", "https://www.twitter.com/kingdingah");
-    $('#twttrc .subttl').html('My main account where I ramble about everything<br />Mainly music<br />I talk about music a lot<br />Also contains various other opinions<br /><br />Enjoy');
+    $('#twttrc .subttl').html('My main account where I ramble about everything<br />Mainly music<br />I talk about music a lot<br />Also contains various other opinions<br /><br />Eight years of nonsense');
   });
 
   $("#twttr2").click(function() {
     $('.area-twitter .goto').html('Go To @kingodes');
-    $('.area-twitter .linktitle').html('@kingodes');
+    $('.area-twitter .linktitle').html('<span class="ghost">Twitter</span> / @kingodes');
     $('.area-twitter .goto').attr("href", "https://www.twitter.com/kingodes");
     $('#twttrc .subttl').html('Where I sometimes post my designs<br/>Emphasis on sometimes<br/>You can still pm there about commissions and design queries<br/><br/>My Ello page is better though');
   });
 
   $("#twttr3").click(function() {
     $('.area-twitter .goto').html('Go To @kingosplace');
-    $('.area-twitter .linktitle').html('@kingosplace');
+    $('.area-twitter .linktitle').html('<span class="ghost">Twitter</span> / @kingosplace');
     $('.area-twitter .goto').attr("href", "https://www.twitter.com/kingosplace");
     $('#twttrc .subttl').html('Where I come to scream<br/>Things get dark here</br></br>Only request if I know you well');
   });
@@ -244,21 +244,21 @@ $(document).ready(function() {
     $('.area-discord').show();
     $('.area-other').hide();
     $('.area-discord .goto').html('Add Me on Discord');
-    $('.area-discord .linktitle').html('kingo#1215');
+    $('.area-discord .linktitle').html('<span class="ghost">Discord</span> / kingo#1215');
     $('.area-discord .goto').attr("href", "#");
     $('#dscrdc .subttl').html('Where I am arguably most active.<br/>Whenever I\'m awake I\'ll definitely get your message.<br/><br/>Just please do not add me for small talk only');
   });
 
   $("#dscrd1").click(function() {
     $('.area-discord .goto').html('Add Me on Discord');
-    $('.area-discord .linktitle').html('kingo#1215');
+    $('.area-discord .linktitle').html('<span class="ghost">Discord</span> / kingo#1215');
     $('.area-discord .goto').attr("href", "#");
-    $('#dscrdc .subttl').html('Where I am arguably most active.<br/>Whenever I\'m awake I\'ll definitely get your message.<br/><br/>Just please don\'t do add me for small talk only');
+    $('#dscrdc .subttl').html('Where I am arguably most active.<br/>Whenever I\'m awake I\'ll definitely get your message.<br/><br/>Just please do not add me for small talk only');
   });
 
   $("#dscrd2").click(function() {
     $('.area-discord .goto').html('Join My Server');
-    $('.area-discord .linktitle').html('Kingo\'s Boy Club');
+    $('.area-discord .linktitle').html('<span class="ghost">Discord</span> / Kingo\'s Boy Club');
     $('.area-discord .goto').attr("href", "https://discord.gg/zuRzRBs");
     $('#dscrdc .subttl').html('My server for boys, by boys<br/>Channels for art, shitposts, music and games<br/>Dedicated voice and text channels for Cards Against Humanity</br>Lots of channels for NSFW lovers, though restricted to a role<br/><br/>Please read the rules before you join');
   });
@@ -268,58 +268,58 @@ $(document).ready(function() {
     $('.area-discord').hide();
     $('.area-other').show();
     $('.area-other .goto').html('Send Request to dingah');
-    $('.area-other .linktitle').html('dingah');
+    $('.area-other .linktitle').html('<span class="ghost">Steam</span> / dingah');
     $('.area-other .goto').attr("href", "https://www.steamcommunity.com/id/dingah");
-    $('#otherc .subttl').html('Where I be shooting boys.<br/>Really only playing Team Fortress 2 on there<br/> Doesn\'t mean I just play TF2.<br/>If we share a game, we can definitely play it together<br/><br/>Don\'t add me for no reason');
+    $('#otherc .subttl').html('Where I be shooting boys<br/>Really only playing Team Fortress 2 on there<br/> Doesn\'t mean I just play TF2<br/>If we share a game, we can definitely play it together<br/><br/>Don\'t add me for no reason');
   });
 
   $('#other1').click(function() {
     $('.area-other .goto').html('Send Request to dingah');
-    $('.area-other .linktitle').html('dingah');
+    $('.area-other .linktitle').html('<span class="ghost">Discord</span> / dingah');
     $('.area-other .goto').attr("href", "https://www.steamcommunity.com/id/dingah");
-    $('#otherc .subttl').html('Where I be shooting boys.<br/>Really only playing Team Fortress 2 on there<br/> Doesn\'t mean I just play TF2.<br/>If we share a game, we can definitely play it together<br/><br/>Don\'t add me for no reason');
+    $('#otherc .subttl').html('Where I be shooting boys<br/>Really only playing Team Fortress 2 on there<br/> Doesn\'t mean I just play TF2<br/>If we share a game, we can definitely play it together<br/><br/>Don\'t add me for no reason');
   });
 
   $('#other2').click(function() {
     $('.area-other .goto').html('Add dingah on Telegram');
-    $('.area-other .linktitle').html('dingah');
+    $('.area-other .linktitle').html('<span class="ghost">Telegram</span> / dingah');
     $('.area-other .goto').attr("href", "https://t.me/dingah");
-    $('#otherc .subttl').html('Not as active on here, than Twitter or Discord<br/>More of a back up if you somehow don\'t use the latter two.<br/><br/>Sorry if I read your message and don\'t reply :( <br/>I\'m probably busy working');
+    $('#otherc .subttl').html('Not as active on here, than Twitter or Discord<br/>More of a back up if you somehow don\'t use the latter two<br/><br/>Sorry if I read your message and don\'t reply :( <br/>I\'m probably busy working');
   });
 
   $('#other3').click(function() {
     $('.area-other .goto').html('Follow dingah');
-    $('.area-other .linktitle').html('dingah');
+    $('.area-other .linktitle').html('<span class="ghost">Ello</span> / dingah');
     $('.area-other .goto').attr("href", "https://www.ello.co/dingah");
     $('#otherc .subttl').html('Where I post all my concept art and commissioned album artwork<br/><br/>Not much else to say other than that');
   });
 
   $('#other4').click(function() {
     $('.area-other .goto').html('Follow kingdingah');
-    $('.area-other .linktitle').html('kingdingah');
+    $('.area-other .linktitle').html('<span class="ghost">Tumblr</span> / kingdingah');
     $('.area-other .goto').attr("href", "https://kingdingah.tumblr.com/");
     $('#otherc .subttl').html('My main tumblr, where I reblog stupid shit everyday<br/>Or insightful content that resonates with me<br/><br/>Been on this shit since 2010, damn..');
   });
 
   $('#other5').click(function() {
     $('.area-other .goto').html('View My Listography');
-    $('.area-other .linktitle').html('kingdingah');
+    $('.area-other .linktitle').html('<span class="ghost">Listography</span> / kingdingah');
     $('.area-other .goto').attr("href", "https://www.listography.com/kingdingah");
     $('#otherc .subttl').html('Where you can find some personal lists and more personal info<br/>And my bucket list of bad dreams<br/<br/>Contains other stuff too, but I forget what');
   });
 
   $('#other6').click(function() {
     $('.area-other .goto').html('View My LastFM');
-    $('.area-other .linktitle').html('kingdingah');
+    $('.area-other .linktitle').html('<span class="ghost">LastFM</span> / kingdingah');
     $('.area-other .goto').attr("href", "https://www.last.fm/user/kingdingah");
     $('#otherc .subttl').html('Where you can find out what I have been listening too recently<br/>And how much I listen to Tim Hecker over any other artist<br/><br/>Some of my listens are YT vids so, sorry about those');
   });
 
   $('#other7').click(function() {
     $('.area-other .goto').html('View My Discogs');
-    $('.area-other .linktitle').html('kingdingah');
+    $('.area-other .linktitle').html('<span class="ghost">Discogs</span> / kingdingah');
     $('.area-other .goto').attr("href", "https://www.discogs.com/user/kingdingah");
-    $('#otherc .subttl').html('All my owned music, both digital and physical<br/>Updated every couple months or so<br/>Not a big collector but I hope to be in future<br>/<br/>Still need every available version of Harmony In Ultraviolet on this site');
+    $('#otherc .subttl').html('All my owned music, both digital and physical<br/>Updated every couple months or so<br/>Not a big collector but I hope to be in future<br/><br/>Still need every available version of Harmony In Ultraviolet');
   });
 
 

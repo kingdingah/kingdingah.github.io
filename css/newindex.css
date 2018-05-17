@@ -172,7 +172,8 @@ div.owl-carousel, .owl-stage, .owl-item
   display: none;
 }
 
-#abt1c, #abt2c, #abt3c{display: none;}
+#abt1c{display: block;}
+#abt2c, #abt3c{display: none;}
 
 .ghost
 {
@@ -189,6 +190,29 @@ div.owl-carousel, .owl-stage, .owl-item
   height: 150px;
 }
 
+#abt1c .textarea
+{
+  position: absolute;
+  top: 100px;
+  right: 30px;
+}
+
+#abt1c img
+{
+  position: absolute;
+  top: 100px;
+  left: 0;
+  height: 100%;
+  width: auto;
+}
+
+#abt1c .textarea p
+{
+  color: white !important;
+  font-size: 1.6em;
+  text-align: right;
+}
+
 #abt2c .textarea, #abt3c .textarea
 {
   position: absolute;
@@ -200,7 +224,7 @@ div.owl-carousel, .owl-stage, .owl-item
 {
   position: absolute;
   width: 100%;
-  right: 0;
+  right: 15px;
   display: none;
 }
 
