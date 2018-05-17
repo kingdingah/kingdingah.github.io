@@ -368,15 +368,17 @@ $(document).ready(function() {
     $(".lightbox img").attr("src", $(this).parent().siblings('img').attr("src"));
   });
 
-  if($("title").text() == "Albums")
+  if($(document).find("title").text() == "Albums")
   {
     $(".chains").css({
-      'height':$(".container-one").height()
+      'left':'155px',
+      'height':$(".container-three").height()
     })
   }
-  else if($("title").text() == "Home")
+  else if($(document).find("title").text() == "Home")
   {
     $(".chains").css({
+      'left':'180px',
       'height':($("html").height()*5)
     })
   }
