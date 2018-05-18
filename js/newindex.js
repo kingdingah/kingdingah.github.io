@@ -166,16 +166,16 @@ $(document).ready(function() {
     $('.area-logo').show();
     $('.area-album').hide();
     $('.area-display').hide();
-    $('.area-album .linktitle').html('2018');
-    $('.area-album .goto').attr('href', 'logo.html');
-    $('.area-album .goto').html('View All Logos');
+    $('.area-logo .linktitle').html('<span class="ghost">2018</span> / Logo');
+    $('.area-logo .goto').attr('href', 'logo.html');
+    $('.area-logo .goto').html('View All Logos');
   });
 
   $('#lbm').click(function() {
     $('.area-logo').hide();
     $('.area-album').show();
     $('.area-display').hide();
-    $('.area-album .linktitle').html('2018');
+    $('.area-album .linktitle').html('<span class="ghost">2018</span> / Album');
     $('.area-album .goto').attr('href', 'album.html');
     $('.area-album .goto').html('View All Albums');
     $('#lbm1c').css({'display':'block'});
@@ -185,27 +185,52 @@ $(document).ready(function() {
     $('.area-logo').hide();
     $('.area-album').hide();
     $('.area-display').show();
-    $('.area-album .linktitle').html('2018');
-    $('.area-album .goto').attr('href', 'display.html');
-    $('.area-album .goto').html('View All Displays');
+    $('.area-display .linktitle').html('<span class="ghost">2018</span> / Display');
+    $('.area-display .goto').attr('href', 'display.html');
+    $('.area-display .goto').html('View All Displays');
   });
 
   $('#prjcts').click(function() {
     $('.area-projects').show();
     $('.area-work').hide();
     $('.area-skills').hide();
+    $('.area-projects .linktitle').html('<span class="ghost">Personal</span> / Projects / Web');
   });
 
   $('#wrk').click(function() {
     $('.area-projects').hide();
     $('.area-work').show();
     $('.area-skills').hide();
+    $('.area-work .linktitle').html('<span class="ghost">2018</span> / Work / Web');
   });
 
   $('#sklls').click(function() {
     $('.area-projects').hide();
     $('.area-work').hide();
     $('.area-skills').show();
+    $('#sklls1c').show();
+    $('.area-skills .linktitle').html('<span class="ghost">Software</span> / Skills / Web');
+  });
+
+  $("#sklls1").click(function() {
+    $('.area-skills .linktitle').html('<span class="ghost">Software</span> / Skills / Web');
+    $('#sklls1c').show();
+    $('#sklls2c').hide();
+    $('#sklls3c').hide();
+  });
+
+  $("#sklls2").click(function() {
+    $('.area-skills .linktitle').html('<span class="ghost">Languages</span> / Skills / Web');
+    $('#sklls1c').hide();
+    $('#sklls2c').show();
+    $('#sklls3c').hide();
+  });
+
+  $("#sklls3").click(function() {
+    $('.area-skills .linktitle').html('<span class="ghost">Packages</span> / Skills / Web');
+    $('#sklls1c').hide();
+    $('#sklls2c').hide();
+    $('#sklls3c').show();
   });
 
   $('#twttr').click(function() {
@@ -376,6 +401,48 @@ $(document).ready(function() {
     $('#lbm3c').show();
   });
 
+  $('#dsply1').click(function() {
+    $('.area-display .linktitle').html('<span class="ghost">2018</span> / Display');
+    $('#dsply1c').show();
+    $('#dsply2c').hide();
+    $('#dsply3c').hide();
+  });
+
+  $('#dsply2').click(function() {
+    $('.area-display .linktitle').html('<span class="ghost">2017</span> / Display');
+    $('#dsply1c').hide();
+    $('#dsply2c').show();
+    $('#dsply3c').hide();
+  });
+
+  $('#dsply3').click(function() {
+    $('.area-display .linktitle').html('<span class="ghost">2016</span> / Display');
+    $('#dsply1c').hide();
+    $('#dsply2c').hide();
+    $('#dsply3c').show();
+  });
+
+  $('#lg1').click(function() {
+    $('.area-logo .linktitle').html('<span class="ghost">2018</span> / Logo');
+    $('#lg1c').show();
+    $('#lg2c').hide();
+    $('#lg3c').hide();
+  });
+
+  $('#lg2').click(function() {
+    $('.area-logo .linktitle').html('<span class="ghost">2017</span> / Logo');
+    $('#lg1c').hide();
+    $('#lg2c').show();
+    $('#lg3c').hide();
+  });
+
+  $('#lg3').click(function() {
+    $('.area-logo .linktitle').html('<span class="ghost">2016</span> / Logo');
+    $('#lg1c').hide();
+    $('#lg2c').hide();
+    $('#lg3c').show();
+  });
+
   $(".container-three .item").hover(function() {
     $(this).find('.overlay').show();
     $(this).find('img').css({'-webkit-filter':'grayscale(100%)','filter':'grayscale(100%)'});
@@ -408,6 +475,11 @@ $(document).ready(function() {
       'left':'180px',
       'height':($("html").height()*5)
     })
+  }
+
+  if($("div.notready").is(":visible"))
+  {
+    $("body").css("overflow","hidden");
   }
 
 });
