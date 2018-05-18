@@ -30,6 +30,8 @@ $(document).ready(function() {
       }
   });
 
+  $("div.notready").show();
+
   $("span.cls").click(function()
   {
     if($("div.notready").is(":visible"))

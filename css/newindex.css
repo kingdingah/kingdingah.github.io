@@ -827,7 +827,6 @@ div.notready
   height: 100%;
   position: fixed;
   z-index: 100;
-  display: none;
   background-color: #ef374f;
 }
 
