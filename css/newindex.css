@@ -196,7 +196,7 @@ div.owl-carousel, .owl-stage, .owl-item
 #abt1c .textarea
 {
   position: absolute;
-  top: 100px;
+  top: 120px;
   right: 30px;
 }
 
@@ -212,7 +212,7 @@ div.owl-carousel, .owl-stage, .owl-item
 #abt1c .textarea p
 {
   color: white !important;
-  font-size: 1.6em;
+  font-size: 2em;
   text-align: right;
 }
 
@@ -234,17 +234,18 @@ div.owl-carousel, .owl-stage, .owl-item
 #abt2c .tabular table, #abt3c .tabular table
 {
   position: absolute;
-  top: 100px;
+  top: 120px;
+  width: 100%;
 }
 
 #abt2c .tabular table td, #abt3c .tabular table td
 {
   width: 40%;
-  height: 50px;
+  height: 75px;
   color: white !important;
-  font-size: 1.4em;
+  font-size: 2em;
   text-align: right;
-  line-height: 50px;
+  line-height: 75px;
   padding-right: 15px !important;
 }
 
@@ -315,7 +316,7 @@ div.owl-carousel, .owl-stage, .owl-item
 
 .container-three .section-box div.item
 {
-  height: 480px;
+  height: 520px;
   width: 400px;
   float: left;
 }
@@ -620,11 +621,16 @@ div.owl-carousel, .owl-stage, .owl-item
   position: absolute;
   bottom: 30px;
   right: 30px;
-  font-size: 1.5em;
+  font-size: 2.4em;
   color: white !important;
   text-align: right;
   padding: 5px 10px !important;
   z-index: 50;
+}
+
+.container-two .goto, .toEdu
+{
+  bottom: -80px !important;
 }
 
 .goto:hover,.toEdu:hover
@@ -705,7 +711,7 @@ a.link:active
 
 a.ttl, span.ttl
 {
-  font-size: 2em;
+  font-size: 3em;
   text-align: right;
   color: white !important;
   display: block;
@@ -718,7 +724,7 @@ span.ttl
 
 .subttl
 {
-  font-size: 1.4em;
+  font-size: 2em;
   text-align: right;
   color: white !important;
   display: block;
@@ -814,6 +820,14 @@ div.commstatus th
 {
   text-align: right;
   font-size: 2.8em;
+}
+
+#twttrc, #dscrdc, #otherc
+{
+  position: absolute;
+  right: 30px;
+  top: 120px;
+  font-size: 1.4em !important;
 }
 
 
@@ -1042,9 +1056,21 @@ span#sitedate
     width: 50px;
   }
 
+  #abt1c .textarea p
+  {
+    font-size: 1.6em;
+  }
+
   .container-two .section-box img
   {
     width: 130px;
+  }
+
+  #abt2c .tabular table td, #abt3c .tabular table td
+  {
+    font-size: 1.6em;
+    height: 50px;
+    line-height: 50px;
   }
 
   .container-two .linkbox
@@ -1085,6 +1111,16 @@ span#sitedate
   .album-carousel
   {
     top: 100px;
+  }
+
+  a.ttl, span.ttl
+  {
+    font-size: 2em;
+  }
+
+  .subttl
+  {
+    font-size: 1.4em;
   }
 
   .goto, .toEdu
@@ -1196,6 +1232,17 @@ span#sitedate
   #name3{left: calc(50% - 62px); bottom: 0px;}
   #name4{left: calc(50% - -4px); bottom: 0px;}
   #name5{left: calc(50% - -30px); bottom: 0px;}
+
+  #abt1c .textarea, #twttrc
+  {
+    top: 100px;
+  }
+
+  .goto, .toEdu
+  {
+    bottom: 30px;
+    font-size: 1.5em;
+  }
 }
 
 @media (min-width: 990px) and (max-width: 1200px)
