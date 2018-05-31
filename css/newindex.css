@@ -706,7 +706,7 @@ a.link:active
   position: absolute;
   top: 0;
   left: 180px;
-  z-index: 10;
+  z-index: 20;
 }
 
 a.ttl, span.ttl
@@ -1018,6 +1018,9 @@ span#sitedate
   margin-left: calc(50% - 100px);
 }
 
+.section-box-mobile{display: none;}
+.section-box{display: block;}
+
 /* END SITE FOOTER */
 
 /* MEDIA QUERIES */
@@ -1240,7 +1243,7 @@ span#sitedate
 
   .goto, .toEdu
   {
-    bottom: 30px;
+    bottom: -80px;
     font-size: 1.5em;
   }
 }
@@ -1253,5 +1256,117 @@ span#sitedate
     height: 150px !important;
   }
 }
+
+@media (max-width: 990px)
+{
+  .container-one .item
+  {
+    width: 125px !important;
+    height: 125px !important;
+  }
+
+  .chains
+  {
+    left: 20px !important;
+  }
+
+  .container-one .mylogo
+  {
+    left: 50px;
+  }
+
+  .container-one .mylogo img
+  {
+    height: 135px;
+    width: 135px;
+  }
+
+  .container-one .left-stripe
+  {
+    left: 0;
+    top: 0;
+    height: 100%;
+  }
+
+  .secret{display: none;}
+
+  .container-one .links
+  {
+    position: absolute;
+    top: 170px;
+    left: 40px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    z-index: 12;
+  }
+
+  .container-one .links div
+  {
+    font-size: 2.4em;
+    line-height: 1.2em;
+    color: white !important;
+    text-align: left !important;
+    height: 1.2em;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    width: auto;
+    display: inline-block;
+    float: left;
+    clear: left;
+  }
+
+  .nums, .left-stripe, .commstatus,
+  .section-title, .section-links{display: none;}
+
+  .back-up
+  {
+    bottom: 20px;
+    right: 20px;
+    left: auto;
+  }
+
+  .art-carousel
+  {
+    bottom: 20px;
+    z-index: 30 !important;
+  }
+
+  .section-box-mobile{display: block;}
+  .section-box{display: none;}
+
+  .container-two .section-box-mobile
+  {
+    height: 100%;
+    width: 100%;
+  }
+
+  .container-two .section-title-mob
+  {
+    font-size: 4em;
+    color: white !important;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+  }
+
+  .container-two .section-subtitle-mob
+  {
+    font-size: 2.4em;
+    color: rgba(255,255,255,0.7) !important;
+    position: absolute;
+    top: 80px;
+    left: 50px;
+  }
+
+  .mob-drop
+  {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+  }
+}
+
 
 /* END MEDIA QUERIES */

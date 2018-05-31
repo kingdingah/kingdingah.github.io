@@ -10,12 +10,9 @@ $(document).ready(function() {
       autoplayHoverPause: true,
       responsive:{
           0:{
-              items:1
+              items:3
           },
-          650:{
-              items:2
-          },
-          1000:{
+          990:{
               items:6
           },
           1200:{
@@ -30,7 +27,7 @@ $(document).ready(function() {
       }
   });
 
-  $("div.notready").show();
+  $("div.notready").hide();
 
   $("span.cls").click(function()
   {
@@ -464,14 +461,14 @@ $(document).ready(function() {
     $(".lightbox img").attr("src", $(this).parent().siblings('img').attr("src"));
   });
 
-  if($(document).find("title").text() == "Albums")
+  if($(window).width() < 990)
   {
     $(".chains").css({
-      'left':'155px',
-      'height':$(".container-three").height()
+      'left':'40px',
+      'height':($("div.container-one").height()*5)
     })
   }
-  else if($(document).find("title").text() == "Home")
+  else
   {
     $(".chains").css({
       'left':'180px',
