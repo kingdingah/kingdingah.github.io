@@ -115,6 +115,7 @@ $(document).ready(function() {
 
   $('#abt1').click(function() {
     $('.area-about .linktitle').html('General');
+    $('.area-about .goto').hide();
     $('#abt1c').show();
     $('#abt2c').hide();
     $('#abt3c').hide();
@@ -453,7 +454,14 @@ $(document).ready(function() {
   $(".overlay").css({
     'width':$(".container-three .section-box div.item img").width(),
     'height':$(".container-three .section-box div.item img").height()
-  })
+  });
+
+  $(window).resize(function() {
+      $(".overlay").css({
+        'width':$(".container-three .section-box div.item img").width(),
+        'height':$(".container-three .section-box div.item img").height()
+      });
+  });
 
   $(".overlay a").click(function() {
     $("body").css("overflow","hidden");
