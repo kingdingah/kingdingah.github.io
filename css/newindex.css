@@ -89,7 +89,7 @@
 {
   position: absolute !important;
   bottom: 50px;
-  z-index: 11 !important;
+  z-index: 20 !important;
   cursor: -webkit-grab;
   cursor: grab;
 }
@@ -320,32 +320,130 @@ div.owl-carousel, .owl-stage, .owl-item
   height: auto;
 }
 
-.container-three .section-box div.item
+.container-three .area-album div.item
 {
   height: 520px;
   width: 400px;
   float: left;
 }
 
-#lbm1c
+.container-three .area-logo div.item
+{
+  height: 550px;
+  width: 400px;
+  float: left;
+}
+
+.owl-carousel .owl-item img
+{
+  display: block;
+  width: auto !important;
+}
+
+.display-carousel .owl-item img
+{
+  height: 400px !important;
+  width: auto;
+}
+
+#lbm1c, #dsply1c, #lg1c
 {
   display: block;
 }
 
-#lbm2c, #lbm3c
+#lbm2c, #lbm3c, #lbm4c,
+#dsply2c, #dsply3c, #dsply4c,
+#lg2c, #lg3c, #lg4c
 {
   display: none;
 }
 
-#lbm1c .section-box img
+#lbm1c .section-box img,
+#dsply1c .section-box img,
+#lg1c .section-box img
 {
   position: relative !important;
 }
 
-.album-carousel
+#lbm4c, #dsply4c
+{
+  margin-top: 125px;
+}
+
+#lg4c
+{
+  margin-top: 300px;
+}
+
+#lbm4c .section, #dsply4c .section, #lg4c .section
+{
+  height: 300px;
+  width: calc(100% - 60px);
+}
+
+#lbm4c .section .price-info,
+#lbm4c .section .graphic,
+#dsply4c .section .price-info,
+#dsply4c .section .graphic,
+#lg4c .section .price-info,
+#lg4c .section .graphic
+{
+  height: 100%;
+  position: relative;
+  width: 50%;
+  float: left;
+}
+
+#lbm4c .section .graphic img,
+#dsply4c .section .graphic img,
+#lg4c .section .graphic img
+{
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+}
+
+#lbm4c .section .price-info span.price-type,
+#dsply4c .section .price-info span.price-type,
+#lg4c .section .price-info span.price-type
+{
+  font-size: 2.5em;
+  color: white !important;
+  position: absolute;
+  left:0;
+}
+
+#lbm4c .section .price-info span.price-num,
+#dsply4c .section .price-info span.price-num,
+#lg4c .section .price-info span.price-num
+{
+  font-size: 2.5em;
+  color: white !important;
+  position: absolute;
+  right:0;
+}
+
+#lbm4c .section .price-info p,
+#dsply4c .section .price-info p,
+#lg4c .section .price-info p
+{
+  font-size: 1.6em;
+  margin-top: 70px;
+  color: white !important;
+}
+
+.album-carousel, .logo-carousel
 {
   position: absolute !important;
   top: 150px;
+  z-index: 11 !important;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.display-carousel
+{
+  position: absolute !important;
+  top: 200px;
   z-index: 11 !important;
   cursor: -webkit-grab;
   cursor: grab;
@@ -509,7 +607,7 @@ div.owl-carousel, .owl-stage, .owl-item
   position: fixed;
   bottom: 20px;
   left: calc(50% - 150px);
-  z-index: 20;
+  z-index: 21;
   width: 300px;
 }
 
@@ -536,7 +634,7 @@ div.owl-carousel, .owl-stage, .owl-item
 {
   position: fixed;
   bottom: 85px;
-  z-index: 20;
+  z-index: 21;
   width: 100%;
 }
 

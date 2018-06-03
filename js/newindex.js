@@ -44,7 +44,17 @@ $(document).ready(function() {
     }
   });
 
-  $('.container-three .owl-carousel').owlCarousel({
+  $('.container-three .area-album .owl-carousel, .container-three .area-logo .owl-carousel').owlCarousel({
+    loop: false,
+    margin: 0,
+    dots: false,
+    pagination:false,
+    nav: true,
+    nav: true,
+    navText: ["<span class='prev'>Previous</span>","<span class='next'>Next</span>"]
+  });
+
+  $('.container-three .area-display .owl-carousel').owlCarousel({
     loop: false,
     margin: 0,
     dots: false,
@@ -52,9 +62,15 @@ $(document).ready(function() {
     nav: true,
     nav: true,
     navText: ["<span class='prev'>Previous</span>","<span class='next'>Next</span>"],
-    autoplaySpeed: 1000,
-    autoplayTimeout: 3000
-});
+    responsive:{
+        0:{
+            items:1
+        },
+        1700:{
+            items:1
+        }
+    }
+  });
 
   $(".mylogo").hover(function() {
     $(this).css({
@@ -167,8 +183,10 @@ $(document).ready(function() {
     $('.area-album').hide();
     $('.area-display').hide();
     $('.area-logo .linktitle').html('<span class="ghost">2018</span> / Logo');
-    $('.area-logo .goto').attr('href', 'logo.html');
-    $('.area-logo .goto').html('View All Logos');
+    $('#lg1c').show();
+    $('#lg2c').hide();
+    $('#lg3c').hide();
+    $('#lg4c').hide();
   });
 
   $('#lbm').click(function() {
@@ -176,9 +194,11 @@ $(document).ready(function() {
     $('.area-album').show();
     $('.area-display').hide();
     $('.area-album .linktitle').html('<span class="ghost">2018</span> / Album');
-    $('.area-album .goto').attr('href', 'album.html');
     $('.area-album .goto').html('View All Albums');
-    $('#lbm1c').css({'display':'block'});
+    $('#lbm1c').show();
+    $('#lbm2c').hide();
+    $('#lbm3c').hide();
+    $('#lbm4c').hide();
   });
 
   $('#dsply').click(function() {
@@ -186,8 +206,6 @@ $(document).ready(function() {
     $('.area-album').hide();
     $('.area-display').show();
     $('.area-display .linktitle').html('<span class="ghost">2018</span> / Display');
-    $('.area-display .goto').attr('href', 'display.html');
-    $('.area-display .goto').html('View All Displays');
   });
 
   $('#prjcts').click(function() {
@@ -381,24 +399,35 @@ $(document).ready(function() {
   /* WEB */
 
   $('#lbm1').click(function() {
-    $('.area-album .linktitle').html('2018');
+    $('.area-display .linktitle').html('<span class="ghost">2018</span> / Album');
     $('#lbm1c').show();
     $('#lbm2c').hide();
     $('#lbm3c').hide();
+    $('#lbm4c').hide();
   });
 
   $('#lbm2').click(function() {
-    $('.area-album .linktitle').html('2017');
+    $('.area-display .linktitle').html('<span class="ghost">2018</span> / Album');
     $('#lbm1c').hide();
     $('#lbm2c').show();
     $('#lbm3c').hide();
+    $('#lbm4c').hide();
   });
 
   $('#lbm3').click(function() {
-    $('.area-album .linktitle').html('2016');
+    $('.area-display .linktitle').html('<span class="ghost">2018</span> / Album');
     $('#lbm1c').hide();
     $('#lbm2c').hide();
     $('#lbm3c').show();
+    $('#lbm4c').hide();
+  });
+
+  $('#lbm4').click(function() {
+    $('.area-display .linktitle').html('<span class="ghost">Prices</span> / Album');
+    $('#lbm1c').hide();
+    $('#lbm2c').hide();
+    $('#lbm3c').hide();
+    $('#lbm4c').show();
   });
 
   $('#dsply1').click(function() {
@@ -406,6 +435,7 @@ $(document).ready(function() {
     $('#dsply1c').show();
     $('#dsply2c').hide();
     $('#dsply3c').hide();
+    $('#dsply4c').hide();
   });
 
   $('#dsply2').click(function() {
@@ -413,6 +443,7 @@ $(document).ready(function() {
     $('#dsply1c').hide();
     $('#dsply2c').show();
     $('#dsply3c').hide();
+    $('#dsply4c').hide();
   });
 
   $('#dsply3').click(function() {
@@ -420,13 +451,27 @@ $(document).ready(function() {
     $('#dsply1c').hide();
     $('#dsply2c').hide();
     $('#dsply3c').show();
+    $('#dsply4c').hide();
   });
+
+  $('#dsply4').click(function() {
+    $('.area-display .linktitle').html('<span class="ghost">Prices</span> / Display');
+    $('#dsply1c').hide();
+    $('#dsply2c').hide();
+    $('#dsply3c').hide();
+    $('#dsply4c').show();
+  });
+
+  $('#dsply4c img').css({
+    'margin-top':($("#dsply4c img").height())
+  })
 
   $('#lg1').click(function() {
     $('.area-logo .linktitle').html('<span class="ghost">2018</span> / Logo');
     $('#lg1c').show();
     $('#lg2c').hide();
     $('#lg3c').hide();
+    $('#lg4c').hide();
   });
 
   $('#lg2').click(function() {
@@ -434,6 +479,7 @@ $(document).ready(function() {
     $('#lg1c').hide();
     $('#lg2c').show();
     $('#lg3c').hide();
+    $('#lg4c').hide();
   });
 
   $('#lg3').click(function() {
@@ -441,14 +487,15 @@ $(document).ready(function() {
     $('#lg1c').hide();
     $('#lg2c').hide();
     $('#lg3c').show();
+    $('#lg4c').hide();
   });
 
-  $(".container-three .item").hover(function() {
-    $(this).find('.overlay').show();
-    $(this).find('img').css({'-webkit-filter':'grayscale(100%)','filter':'grayscale(100%)'});
-  }, function() {
-    $(this).find('.overlay').hide();
-    $(this).find('img').css({'-webkit-filter':'grayscale(0%)','filter':'grayscale(0%)'})
+  $('#lg4').click(function() {
+    $('.area-logo .linktitle').html('<span class="ghost">Prices</span> / Logo');
+    $('#lg1c').hide();
+    $('#lg2c').hide();
+    $('#lg3c').hide();
+    $('#lg4c').show();
   });
 
   $(".overlay").css({
