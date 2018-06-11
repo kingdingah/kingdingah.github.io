@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="loginnew.css"/>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <script src="login.js"></script>
+  </head>
+  <body>
+    <div class="alertpopup">
+        <span><i class="fa fa-info-circle" aria-hidden="true"></i>Log In Reminder</span>
+        If you created an account before, please use same account details.<br /><br />If you have forgotten your password use the <strong>Forgot your password</strong> link below.<br /><br />If you are not receiving the <strong>Forgot your password</strong> email, please contact the show office to reset your password.
+    </div>
+
+    <div class="alertpopup-mob">
+        <span><i class="fa fa-info-circle" aria-hidden="true"></i>Log In Reminder<i class="fa fa-angle-down" aria-hidden="true"></i></span>
+        <span>If you created an account before, please use same account details.<br /><br />If you have forgotten your password use the <strong>Forgot your password</strong> link below.<br /><br />If you are not receiving the <strong>Forgot your password</strong> email, please contact the show office to reset your password.
+    </span>
+    </div>
+
+    <div class="log-banner">
+      <img src="dotser-logo-white.svg"/>
+    </div>
+
+    <div class="log-bg">
+      <img src="bg.jpg"/>
+    </div>
+
+    <div class="container col-sm-12 log-wrapper">
+      <!-- Main Log container -->
+      <div class="row">
+          <div class="log-panel">
+            <img src="ts-2018-2.svg"/>
+
+            <!-- Sign In container -->
+            <form method="post">
+              <table class="col-sm-12 log-container" id="sign-in-container">
+                <tr>
+                  <td class="signin current">Log In</td>
+                  <td class="signup">Register</td>
+                </tr>
+                <tr><td colspan="2" class="log-subtitle">Email</td></tr>
+                <tr><td colspan="2"><span class="noemail">Please type your email!</span><span class="pointer"></span><input id="login-email" class="textareas form-control" type="text" placeholder="Email" name="email" value="" autofocus /></td></tr>
+                <tr><td colspan="2"><input id="toPass" class="btn btn-primary" type="button" value="Next" /></td></tr>
+              </table>
+
+              <table class="col-sm-12 log-container" id="sign-in-container-pt2">
+                <tr>
+                  <td class="signin current">Log In</td>
+                  <td class="signup">Register</td>
+                </tr>
+                <tr><td colspan="2" class="log-subtitle">Password</td></tr>
+                <tr><td colspan="2"><input id="login-psswrd" class="textareas form-control" type="password" placeholder="Password" name="password" value=""/></td></tr>
+                <tr>
+                    <td><a id="gobackemail">Go back </a><a class="frgtpsswrd" data-toggle="modal" data-target="#forgot-password">Forgot your Password?</a></td>
+                </tr>
+                <tr><td colspan="2"><input id="submit" class="btn btn-primary" type="submit" value="Sign In" /></td></tr>
+              </table>
+            </form>
+            <!-- END Sign In container -->
+
+            <!-- Sign Up container -->
+            <form action="" method="">
+              <table class="col-sm-12 log-container" id="sign-up-container">
+                <tr>
+                  <td class="signin">Log In</td>
+                  <td class="signup current">Register</td>
+                </tr>
+                <tr><td colspan="2" class="log-subtitle">Email</td></tr>
+                <tr><td colspan="2"><input id="signup-email" class="textareas form-control" type="text" placeholder="Email" name="email" value="" autofocus/></td></tr>
+                <tr><td colspan="2" class="log-subtitle">Password</td></tr>
+                <tr><td colspan="2"><input id="signup-psswrd" class="textareas form-control" type="password" placeholder="Password" name="password" value=""/></td></tr>
+                <tr><td colspan="2" class="log-subtitle">Re-type Password</td></tr>
+                <tr><td colspan="2"><input id="signup-psswrd-again" class="textareas form-control" type="password" placeholder="Password" name="password" value=""/></td></tr>
+                <tr><td colspan="2"><input id="submit" class="btn btn-primary" type="submit" value="Sign Up" /></td></tr>
+              </table>
+            </form>
+            <!-- END Sign Up container -->
+          </div>
+      </div>
+      <!-- End of Main Log container -->
+    </div>
+
+    <div class="col-sm-12 log-footer">
+      <div>
+        <a>Privacy Policy</a><p>&copy; Dotser 2018</p><a>Sitemap</a>
+      </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="forgot-password">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content forgotpassword">
+          <div class="modal-header">
+            <h5 class="modal-title">Password Reset</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h4>Email for Password Reset</h4>
+            <input id="forgot-email" class="textareas form-control" type="text" placeholder="Email" name="email" value=""/>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Send Request</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
