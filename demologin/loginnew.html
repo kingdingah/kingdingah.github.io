@@ -19,16 +19,17 @@
     <script src="login.js"></script>
   </head>
   <body>
-    <div class="alertpopup">
-        <span><i class="fa fa-info-circle" aria-hidden="true"></i>Log In Reminder</span>
-        If you created an account before, please use same account details.<br /><br />If you have forgotten your password use the <strong>Forgot your password</strong> link below.<br /><br />If you are not receiving the <strong>Forgot your password</strong> email, please contact the show office to reset your password.
-    </div>
+    {% if system.config['site/login/message'] is defined and system.config['site/login/message'] is not empty %}
+      <div class="alertpopup">
+          <span><i class="fa fa-info-circle" aria-hidden="true"></i>Log In Reminder</span>
+          {{ system.config['site/login/message']|raw }}
+      </div>
 
-    <div class="alertpopup-mob">
-        <span><i class="fa fa-info-circle" aria-hidden="true"></i>Log In Reminder<i class="fa fa-angle-down" aria-hidden="true"></i></span>
-        <span>If you created an account before, please use same account details.<br /><br />If you have forgotten your password use the <strong>Forgot your password</strong> link below.<br /><br />If you are not receiving the <strong>Forgot your password</strong> email, please contact the show office to reset your password.
-    </span>
-    </div>
+      <div class="alertpopup-mob">
+          <span><i class="fa fa-info-circle" aria-hidden="true"></i>Log In Reminder<i class="fa fa-angle-down" aria-hidden="true"></i></span>
+          <span>{{ system.config['site/login/message']|raw }}</span>
+      </div>
+    {% endif %}
 
     <div class="log-banner">
       <img src="dotser-logo-white.svg"/>
@@ -48,15 +49,29 @@
             <form method="post">
               <table class="col-sm-12 log-container" id="sign-in-container">
                 <tr>
+                  {% if error is defined and error is not empty %}
+                    <td colspan="2" class="errormsg">
+                          {{ errormessage }}
+                    </td>
+                  {% endif %}
+                </tr>
+                <tr>
                   <td class="signin current">Log In</td>
                   <td class="signup">Register</td>
                 </tr>
                 <tr><td colspan="2" class="log-subtitle">Email</td></tr>
                 <tr><td colspan="2"><span class="noemail">Please type your email!</span><span class="pointer"></span><input id="login-email" class="textareas form-control" type="text" placeholder="Email" name="email" value="" autofocus /></td></tr>
-                <tr><td colspan="2"><input id="toPass" class="btn btn-primary" type="button" value="Next" /></td></tr>
+                <tr><td colspan="2"><input id="toPass" class="btn btn-primary" type="button" name="next" value="Next" /></td></tr>
               </table>
 
               <table class="col-sm-12 log-container" id="sign-in-container-pt2">
+                <tr>
+                  {% if error is defined and error is not empty %}
+                    <td colspan="2" class="errormsg">
+                          {{ errormessage }}
+                    </td>
+                  {% endif %}
+                </tr>
                 <tr>
                   <td class="signin current">Log In</td>
                   <td class="signup">Register</td>
@@ -66,7 +81,7 @@
                 <tr>
                     <td><a id="gobackemail">Go back </a><a class="frgtpsswrd" data-toggle="modal" data-target="#forgot-password">Forgot your Password?</a></td>
                 </tr>
-                <tr><td colspan="2"><input id="submit" class="btn btn-primary" type="submit" value="Sign In" /></td></tr>
+                <tr><td colspan="2"><input id="submit" class="btn btn-primary" type="submit" name="login" value="Log In" data-loading-text="Loading.."/></td></tr>
               </table>
             </form>
             <!-- END Sign In container -->
@@ -74,6 +89,13 @@
             <!-- Sign Up container -->
             <form action="" method="">
               <table class="col-sm-12 log-container" id="sign-up-container">
+                <tr>
+                  {% if error is defined and error is not empty %}
+                    <td colspan="2" class="errormsg">
+                          {{ errormessage }}
+                    </td>
+                  {% endif %}
+                </tr>
                 <tr>
                   <td class="signin">Log In</td>
                   <td class="signup current">Register</td>

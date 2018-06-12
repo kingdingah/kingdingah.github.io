@@ -1126,12 +1126,3 @@ span#sitedate
 .section-box-mobile{display: none;}
 
 /* END SITE FOOTER */
-
-.loginnew
-{
-  z-index: 1000;
-  color: white;
-  background-color: black;
-  display: block;
-  padding: 15px 25px;
-}
