@@ -10,7 +10,7 @@ $(document).ready(function() {
       autoplayHoverPause: true,
       responsive:{
           0:{
-              items:3
+              items:2
           },
           990:{
               items:6
@@ -73,19 +73,11 @@ $(document).ready(function() {
   });
 
   $(".mylogo").hover(function() {
-    $(this).css({
-      'transform':'rotate(-60deg)',
-      'transition':'0.3s ease all'
-    });
-
-    $(".secret").animate({top: 152, left: 123}, 300);
-  }, function() {
-    $(this).css({
-      'transform':'rotate(0deg)',
-      'transition':'0.3s ease all'
-    });
-
-    $(".secret").animate({top: 110, left: 100}, 300);
+      $(this).css({'transform':'rotate(-60deg)','transition':'0.3s ease all'});
+      $(".secret").stop().animate({top: 152, left: 123}, 250);
+    }, function() {
+      $(this).css({'transform':'rotate(0deg)','transition':'0.3s ease all'});
+      $(".secret").stop().animate({top: 110, left: 100}, 250);
   });
 
   $("#num1").hover(function() {
@@ -528,12 +520,30 @@ $(document).ready(function() {
     $(".chains").css({
       'left':'180px',
       'height':($("html").height()*5)
-    })
+    });
   }
 
   if($("div.notready").is(":visible"))
   {
     $("body").css("overflow","hidden");
   }
+
+  var click = true;
+
+  $(".mobburger").click(function()
+  {
+    if(click)
+    {
+      $(this).css({'transform':'rotate(90deg)'});
+      click = false;
+      $(".sidemenu").show().animate({right: '10px'}, 200);
+    }
+    else
+    {
+      $(this).css({'transform':'rotate(0deg)'});
+      click = true;
+      $(".sidemenu").show().animate({right: '-80px'}, 200);
+    }
+  });
 
 });

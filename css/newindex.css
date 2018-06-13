@@ -158,6 +158,15 @@ div.owl-carousel, .owl-stage, .owl-item
   left: 0;
 }
 
+.container-two img.me
+{
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 30%;
+}
+
 /* END Container One */
 
 /* Container Two */
@@ -174,13 +183,6 @@ div.owl-carousel, .owl-stage, .owl-item
 
 #abt1c{display: block;}
 #abt2c, #abt3c{display: none;}
-
-#abt1c .me
-{
-  position: absolute;
-  z-index: 15;
-  bottom: 0;
-}
 
 #sklls1c, #sklls2c, #sklls3c{display: none;}
 
@@ -1126,3 +1128,52 @@ span#sitedate
 .section-box-mobile{display: none;}
 
 /* END SITE FOOTER */
+
+.blackoverlay
+{
+  height: 100% !important;
+  width: 100% !important;
+  z-index: 1000;
+  position: absolute;
+  background-color: rgba(0,0,0,0.75);
+  display: none;
+}
+
+.mobburger
+{
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 100;
+  transition: 0.2s ease;
+}
+
+.sidemenu
+{
+  position: fixed;
+  right: -80px;
+  top: 70px;
+  z-index: 100;
+  display: none;
+}
+
+.sidemenu a
+{
+  display: block;
+  position: relative;
+  height: 50px;
+  width: 50px;
+}
+
+.sidemenu a:hover
+{
+  background-color: white;
+}
+
+.sidemenu a img
+{
+  width: 50px;
+  height: 50px;
+}

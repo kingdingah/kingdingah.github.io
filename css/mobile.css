@@ -7,6 +7,21 @@
     left: 155px;
   }
 
+  #lbm4c .section, #dsply4c .section, #lg4c .section
+  {
+    height: 200px;
+  }
+
+  #lbm4c .section .price-info p, #dsply4c .section .price-info p, #lg4c .section .price-info p
+  {
+    font-size: 1.4em;
+  }
+
+  .display-carousel
+  {
+    top: 100px;
+  }
+
   .container-one .links div
   {
     font-size: 3em;
@@ -76,6 +91,18 @@
   {
     width: 250px !important;
     height: 350px;
+  }
+
+  #dsply1c div.item, #dsply2c div.item, #dsply3c div.item
+  {
+    width: auto !important;
+    height: 300px;
+    border-right: 1px solid rgb(17, 17, 17);
+  }
+
+  #dsply1c div.item img, #dsply2c div.item img, #dsply3c div.item img
+  {
+    height: 300px !important;
   }
 
   .overlay
@@ -236,8 +263,8 @@
 {
   .container-one .item
   {
-    width: 125px !important;
-    height: 125px !important;
+    width: 150px !important;
+    height: 150px !important;
   }
 
   .chains
@@ -302,8 +329,8 @@
 
   .art-carousel
   {
-    bottom: 20px;
     z-index: 30 !important;
+    bottom: 25px;
   }
 
   .section-box-mobile{display: block;}
@@ -317,7 +344,7 @@
 
   .container-two .section-title-mob
   {
-    font-size: 4em;
+    font-size: 3em;
     color: white !important;
     position: absolute;
     top: 10px;
@@ -326,10 +353,10 @@
 
   .container-two .section-subtitle-mob
   {
-    font-size: 2.4em;
+    font-size: 1.8em;
     color: rgba(255,255,255,0.7) !important;
     position: absolute;
-    top: 80px;
+    top: 60px;
     left: 50px;
   }
 
@@ -340,6 +367,19 @@
     right: 10px;
     height: 30px;
     width: 30px;
+  }
+
+  .container-two img.me
+  {
+    left: 0;
+    z-index: 100;
+    height: 80%;
+    top: 20%;
+  }
+
+  .back-up
+  {
+    z-index: 101;
   }
 }
 
