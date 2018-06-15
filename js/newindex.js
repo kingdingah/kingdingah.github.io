@@ -27,8 +27,6 @@ $(document).ready(function() {
       }
   });
 
-  $(".container-one, .container-three, .container-five, .container-two, .container-four").css({'height':$(document).height();}
-
   $("div.notready").hide();
 
   $("span.cls").click(function()
@@ -74,7 +72,7 @@ $(document).ready(function() {
     }
   });
 
-  if($(window).width() > 768)
+  if($("html,body").width() > 768)
   {
     $(".mylogo").hover(function() {
         $(this).css({'transform':'rotate(-60deg)','transition':'0.3s ease all'});
@@ -115,12 +113,41 @@ $(document).ready(function() {
     });
   }
 
+  $("#num1, #num1m").hover(function() {
+    $(this).attr('src', "img/svg/num/num1b.svg");
+  }, function() {
+    $(this).attr('src', "img/svg/num/num1.svg");
+  });
 
-  $('#num1').click(function(){$("html, body").animate({scrollTop:0}, 600);});
-  $('#abt, #num2').click(function(){$("html, body").animate({scrollTop:$(".container-two").height()}, 600);});
-  $('#dsgn, #num3').click(function(){$("html, body").animate({scrollTop:$(".container-two").height()*2}, 800);});
-  $('#wb, #num4').click(function(){$("html, body").animate({scrollTop:$(".container-two").height()*3}, 1000);});
-  $('#cntct, #num5').click(function(){$("html, body").animate({scrollTop:$(".container-two").height()*4}, 1200);});
+  $("#num2, #num2m").hover(function() {
+    $(this).attr('src', "img/svg/num/num2b.svg");
+  }, function() {
+    $(this).attr('src', "img/svg/num/num2.svg");
+  });
+
+  $("#num3, #num3m").hover(function() {
+    $(this).attr('src', "img/svg/num/num3b.svg");
+  }, function() {
+    $(this).attr('src', "img/svg/num/num3.svg");
+  });
+
+  $("#num4, #num4m").hover(function() {
+    $(this).attr('src', "img/svg/num/num4b.svg");
+  }, function() {
+    $(this).attr('src', "img/svg/num/num4.svg");
+  });
+
+  $("#num5, #num5m").hover(function() {
+    $(this).attr('src', "img/svg/num/num5b.svg");
+  }, function() {
+    $(this).attr('src', "img/svg/num/num5.svg");
+  });
+
+  $('#num1, #num1m').click(function(){$("html, body").stop().animate({scrollTop:0}, 450);});
+  $('#abt, #num2, #num2m').click(function(){$("html, body").stop().animate({scrollTop:$(".container-two").height()}, 450);});
+  $('#dsgn, #num3, #num3m').click(function(){$("html, body").stop().animate({scrollTop:$(".container-two").height()*2}, 450);});
+  $('#wb, #num4, #num4m').click(function(){$("html, body").stop().animate({scrollTop:$(".container-two").height()*3}, 450);});
+  $('#cntct, #num5, #num5m').click(function(){$("html, body").stop().animate({scrollTop:$(".container-two").height()*4}, 450);});
   $('.container-two .back-up').click(function(){$("html, body").animate({scrollTop:0}, 800);});
   $('.container-three .back-up').click(function(){$("html, body").animate({scrollTop:0}, 800);});
   $('.container-four .back-up').click(function(){$("html, body").animate({scrollTop:0}, 800);});
@@ -360,37 +387,6 @@ $(document).ready(function() {
     $('.area-other .linktitle').html('<span class="ghost">Discogs</span> / kingdingah');
     $('.area-other .goto').attr("href", "https://www.discogs.com/user/kingdingah");
     $('#otherc .subttl').html('All my owned music, both digital and physical<br/>Updated every couple months or so<br/>Not a big collector but I hope to be in future<br/><br/>Still need every available version of Harmony In Ultraviolet');
-  });
-
-
-  $("#num1").hover(function() {
-    $(this).attr('src', "img/svg/num/num1b.svg");
-  }, function() {
-    $(this).attr('src', "img/svg/num/num1.svg");
-  });
-
-  $("#num2").hover(function() {
-    $(this).attr('src', "img/svg/num/num2b.svg");
-  }, function() {
-    $(this).attr('src', "img/svg/num/num2.svg");
-  });
-
-  $("#num3").hover(function() {
-    $(this).attr('src', "img/svg/num/num3b.svg");
-  }, function() {
-    $(this).attr('src', "img/svg/num/num3.svg");
-  });
-
-  $("#num4").hover(function() {
-    $(this).attr('src', "img/svg/num/num4b.svg");
-  }, function() {
-    $(this).attr('src', "img/svg/num/num4.svg");
-  });
-
-  $("#num5").hover(function() {
-    $(this).attr('src', "img/svg/num/num5b.svg");
-  }, function() {
-    $(this).attr('src', "img/svg/num/num5.svg");
   });
 
   /* WEB */
