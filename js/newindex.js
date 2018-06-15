@@ -27,6 +27,8 @@ $(document).ready(function() {
       }
   });
 
+  $(".container-one, .container-three, .container-five, .container-two, .container-four").css({'height':$(document).height();}
+
   $("div.notready").hide();
 
   $("span.cls").click(function()
@@ -539,13 +541,13 @@ $(document).ready(function() {
     {
       $(this).css({'transform':'rotate(90deg)'});
       click = false;
-      $(".sidemenu").show().animate({right: '10px'}, 200);
+      $(".sidemenu").show().stop().animate({right: '10px'}, 200);
     }
     else
     {
       $(this).css({'transform':'rotate(0deg)'});
       click = true;
-      $(".sidemenu").show().animate({right: '-80px'}, 200);
+      $(".sidemenu").show().stop().animate({right: '-80px'}, 200);
     }
   });
 

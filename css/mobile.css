@@ -442,11 +442,6 @@
     background-color: white;
     color: #252525 !important;
   }
-
-  .container-one, .container-three, .container-five, .container-two, .container-four
-  {
-    height: calc(100% + 80px);
-  }
 }
 
 
