@@ -1148,6 +1148,7 @@ span#sitedate
   top: 10px;
   z-index: 100;
   transition: 0.2s ease;
+  display: none;
 }
 
 .sidemenu
@@ -1155,7 +1156,7 @@ span#sitedate
   position: fixed;
   right: -80px;
   top: 70px;
-  z-index: 100;
+  z-index: 101;
   display: none;
 }
 

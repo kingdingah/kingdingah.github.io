@@ -12,16 +12,16 @@ $(document).ready(function() {
           0:{
               items:2
           },
+          540:{
+              items:3
+          },
+          630:{
+              items:4
+          },
+          768:{
+              items:5
+          },
           990:{
-              items:6
-          },
-          1200:{
-              items:6
-          },
-          1440:{
-              items:6
-          },
-          1700:{
               items:6
           }
       }
@@ -72,43 +72,46 @@ $(document).ready(function() {
     }
   });
 
-  $(".mylogo").hover(function() {
-      $(this).css({'transform':'rotate(-60deg)','transition':'0.3s ease all'});
-      $(".secret").stop().animate({top: 152, left: 123}, 250);
-    }, function() {
-      $(this).css({'transform':'rotate(0deg)','transition':'0.3s ease all'});
-      $(".secret").stop().animate({top: 110, left: 100}, 250);
-  });
+  if($(window).width() > 768)
+  {
+    $(".mylogo").hover(function() {
+        $(this).css({'transform':'rotate(-60deg)','transition':'0.3s ease all'});
+        $(".secret").stop().animate({top: 152, left: 123}, 250);
+      }, function() {
+        $(this).css({'transform':'rotate(0deg)','transition':'0.3s ease all'});
+        $(".secret").stop().animate({top: 110, left: 100}, 250);
+    });
 
-  $("#num1").hover(function() {
-      $("#name1").css({'display':'inline-block'});
-    }, function() {
-      $("#name1").hide();
-  });
+    $("#num1").hover(function() {
+        $("#name1").css({'display':'inline-block'});
+      }, function() {
+        $("#name1").hide();
+    });
 
-  $("#num2").hover(function() {
-      $("#name2").css({'display':'inline-block'});
-    }, function() {
-      $("#name2").hide();
-  });
+    $("#num2").hover(function() {
+        $("#name2").css({'display':'inline-block'});
+      }, function() {
+        $("#name2").hide();
+    });
 
-  $("#num3").hover(function() {
-      $("#name3").css({'display':'inline-block'});
-    }, function() {
-      $("#name3").hide();
-  });
+    $("#num3").hover(function() {
+        $("#name3").css({'display':'inline-block'});
+      }, function() {
+        $("#name3").hide();
+    });
 
-  $("#num4").hover(function() {
-      $("#name4").css({'display':'inline-block'});
-    }, function() {
-      $("#name4").hide();
-  });
+    $("#num4").hover(function() {
+        $("#name4").css({'display':'inline-block'});
+      }, function() {
+        $("#name4").hide();
+    });
 
-  $("#num5").hover(function() {
-      $("#name5").css({'display':'inline-block'});
-    }, function() {
-      $("#name5").hide();
-  });
+    $("#num5").hover(function() {
+        $("#name5").css({'display':'inline-block'});
+      }, function() {
+        $("#name5").hide();
+    });
+  }
 
 
   $('#num1').click(function(){$("html, body").animate({scrollTop:0}, 600);});
@@ -543,6 +546,69 @@ $(document).ready(function() {
       $(this).css({'transform':'rotate(0deg)'});
       click = true;
       $(".sidemenu").show().animate({right: '-80px'}, 200);
+    }
+  });
+
+  var click1 = true;
+  var click2 = true;
+  var click3 = true;
+
+  $("#mobtwitter span").click(function()
+  {
+    if(click1)
+    {
+      $("#mobdiscord, #mobother").hide();
+      $("#mobtwitter").css({'top':'100px'});
+      $("#mobdiscord .contactlist, #mobother .contactlist").hide();
+      $("#mobtwitter .contactlist").show();
+      click1 = false;
+    }
+    else
+    {
+      $("#mobtwitter .contactlist").hide();
+      $("#mobdiscord .contactlist, #mobother .contactlist").hide();
+      $("#mobdiscord, #mobother").show();
+      click1 = true;
+    }
+  });
+
+  $("#mobdiscord span").click(function()
+  {
+    if(click2)
+    {
+      $("#mobtwitter, #mobother").hide();
+      $("#mobdiscord").css({'top':'100px'});
+      $("#mobtwitter .contactlist, #mobother .contactlist").hide();
+      $("#mobdiscord .contactlist").show();
+      click2 = false;
+    }
+    else
+    {
+      $("#mobdiscord .contactlist").hide();
+      $("#mobdiscord").css({'top':'170px'});
+      $("#mobtwitter .contactlist, #mobother .contactlist").hide();
+      $("#mobtwitter, #mobother").show();
+      click2 = true;
+    }
+  });
+
+  $("#mobother span").click(function()
+  {
+    if(click3)
+    {
+      $("#mobdiscord, #mobtwitter").hide();
+      $("#mobother").css({'top':'100px'});
+      $("#mobdiscord .contactlist, #mobtwitter .contactlist").hide();
+      $("#mobother .contactlist").show();
+      click3 = false;
+    }
+    else
+    {
+      $("#mobother .contactlist").hide();
+      $("#mobother").css({'top':'240px'});
+      $("#mobdiscord .contactlist, #mobtwitter .contactlist").hide();
+      $("#mobdiscord, #mobtwitter").show();
+      click3 = true;
     }
   });
 
