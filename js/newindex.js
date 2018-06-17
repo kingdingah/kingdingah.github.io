@@ -312,20 +312,21 @@ $(document).ready(function() {
     $('.area-other').hide();
     $('.area-discord .goto').html('Add Me on Discord');
     $('.area-discord .linktitle').html('<span class="ghost">Discord</span> / kingo#1215');
-    $('.area-discord .goto').attr("href", "#");
-    $('#dscrdc .subttl').html('Where I am arguably most active.<br/>Whenever I\'m awake I\'ll definitely get your message.<br/><br/>Just please do not add me for small talk only');
+    $('.area-discord .goto').hide();
+    $('#dscrdc .subttl').html('Where I am arguably most active<br/>Whenever I\'m awake I\'ll definitely get your message<br/><br/>Just please do not add me for small talk only');
   });
 
   $("#dscrd1").click(function() {
     $('.area-discord .goto').html('Add Me on Discord');
     $('.area-discord .linktitle').html('<span class="ghost">Discord</span> / kingo#1215');
-    $('.area-discord .goto').attr("href", "#");
-    $('#dscrdc .subttl').html('Where I am arguably most active.<br/>Whenever I\'m awake I\'ll definitely get your message.<br/><br/>Just please do not add me for small talk only');
+    $('.area-discord .goto').hide();
+    $('#dscrdc .subttl').html('Where I am arguably most active<br/>Whenever I\'m awake I\'ll definitely get your message<br/><br/>Just please do not add me for small talk only');
   });
 
   $("#dscrd2").click(function() {
     $('.area-discord .goto').html('Join My Server');
     $('.area-discord .linktitle').html('<span class="ghost">Discord</span> / Kingo\'s Boy Club');
+    $('.area-discord .goto').show();
     $('.area-discord .goto').attr("href", "https://discord.gg/zuRzRBs");
     $('#dscrdc .subttl').html('My server for boys, by boys<br/>Channels for art, shitposts, music and games<br/>Dedicated voice and text channels for Cards Against Humanity</br>Lots of channels for NSFW lovers, though restricted to a role<br/><br/>Please read the rules before you join');
   });
@@ -392,7 +393,7 @@ $(document).ready(function() {
   /* WEB */
 
   $('#lbm1').click(function() {
-    $('.area-display .linktitle').html('<span class="ghost">2018</span> / Album');
+    $('.area-album .linktitle').html('<span class="ghost">2018</span> / Album');
     $('#lbm1c').show();
     $('#lbm2c').hide();
     $('#lbm3c').hide();
@@ -400,7 +401,7 @@ $(document).ready(function() {
   });
 
   $('#lbm2').click(function() {
-    $('.area-display .linktitle').html('<span class="ghost">2018</span> / Album');
+    $('.area-album .linktitle').html('<span class="ghost">2017</span> / Album');
     $('#lbm1c').hide();
     $('#lbm2c').show();
     $('#lbm3c').hide();
@@ -408,7 +409,7 @@ $(document).ready(function() {
   });
 
   $('#lbm3').click(function() {
-    $('.area-display .linktitle').html('<span class="ghost">2018</span> / Album');
+    $('.area-album .linktitle').html('<span class="ghost">2016</span> / Album');
     $('#lbm1c').hide();
     $('#lbm2c').hide();
     $('#lbm3c').show();
@@ -416,7 +417,7 @@ $(document).ready(function() {
   });
 
   $('#lbm4').click(function() {
-    $('.area-display .linktitle').html('<span class="ghost">Prices</span> / Album');
+    $('.area-album .linktitle').html('<span class="ghost">Prices</span> / Album');
     $('#lbm1c').hide();
     $('#lbm2c').hide();
     $('#lbm3c').hide();
