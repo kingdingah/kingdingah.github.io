@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Kingo - Home</title>
+
+		<link rel="stylesheet" href="css/hover/hover.css"/>
+		<link rel="stylesheet" href="css/jquery.fullPage.css"/>
+		<link rel="stylesheet" href="css/fa-svg-with-js.css"/>
+		<link rel="stylesheet" href="css/component.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+		<script src="js/jquery.fullPage.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+		<div class="alert alert-warning">
+			<a class="close">&times;</a>
+		  Error: <span id="alert-text"></span>
+		</div>
+
+		<div id="myBurger" class="burger-menu">
+			<h1 id="burger-title">Menu</h1>
+			<a href="javascript:void(0);" class="cross" onclick="closeBurger()">×</a>
+			<a class="hvr-grow" href="index.html">Home</a>
+			<a class="hvr-grow" href="carddb.html">CardsDB</a>
+			<a class="hvr-grow" href="gallery.html">Generator 2</a>
+			<a class="hvr-grow" href="software.html">Generator 3</a>
+			<a class="hvr-grow" href="contact.html">Generator 4</a>
+		</div>
+		<div class="site-nav">
+			<!--<div class="mytitle">Generators</div>-->
+			<!--<div class="mydivider"> - </div>
+			<div class="mysubtitle">Odds and Ends</div>-->
+			<div class="navsymbol">
+				<img src="img/svg/symbol.svg"/>
+			</div>
+			<img src="img/svg/typeface.svg" class="navtypeface"/>
+			<div class="hamburger-menu">
+				<a href="javascript:void(0);" class="icon" onclick="openBurger()">&#9776;</a>
+			</div>
+			<div id="myTopnav" class="topnav">
+				<a href="index.html">Home</a>
+				<a href="carddb.html">CardsDB</a>
+				<a href="design.html">Gen 2</a>
+				<a href="software.html">Gen 3</a>
+				<a href="contact.html">Gen 4</a>
+			</div>
+		</div>
+		<div id="blackoverlay"></div>
+		<div class="main home-container container">
+			<div class="row">
+				<div class="upperside col-sm-8 col-md-6">
+					<div class="container">
+						<div class="row">
+							<div class="home-title col-sm-12">Generators</div>
+							<div class="home-subtitle col-sm-12">Feeder Text</div>
+							<div class="selector-container col-sm-12">
+								<div class="container">
+									<div class="row">
+										<div class="home-selectors col-sm-6">
+											<button id="option1" type="button" class="home-btn">CAH</button>
+										</div>
+										<div class="home-selectors col-sm-6">
+											<button id="option2" type="button" class="home-btn">Option 2</button>
+										</div>
+										<div class="home-selectors col-sm-6">
+											<button id="option3" type="button" class="home-btn">Option 3</button>
+										</div>
+										<div class="home-selectors col-sm-6">
+											<button id="option4" type="button" class="home-btn">Option 4</button>
+										</div>
+										<div class="home-selectors col-sm-6">
+											<button id="option5" type="button" class="home-btn">Option 5</button>
+										</div>
+										<div class="home-selectors col-sm-6">
+											<button id="option6" type="button" class="home-btn">Option 6</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- UNDERSIDE 1 = CARDS AGAINST HUMANITY-->
+				<div class="underside col-sm-12" id="underside1">
+					<div class="main-two container" id="main-gen">
+						<div class="row">
+							<div id="leftside" class="leftside-desktop col-md-12 col-lg-6">
+								<div class="container">
+									<div class="row">
+										<div class="cah-title col-sm-12">
+											Cards Against Humanity
+										</div>
+										<div class="cah-subtitle col-sm-12">
+											How many White cards?
+										</div>
+										<div class="choices col-sm-4">
+											<button id="card_button1" class="btn btn-3 btn-3d icon-card1">One</button>
+										</div>
+										<div class="choices col-sm-4">
+											<button id="card_button2" class="btn btn-3 btn-3d icon-card2">Two</button>
+										</div>
+										<div class="choices col-sm-4">
+											<button id="card_button3" class="btn btn-3 btn-3d icon-card3">Three</button>
+										</div>
+										<div class="gen-text col-sm-12">
+											<input class="txt-input1" maxlength="100" id="txt-input" type="text" placeholder="Card #1"/>
+										</div>
+										<div class="gen-text col-sm-12">
+											<input class="txt-input2" maxlength="100" id="txt-input" type="text" placeholder="Card #2"/>
+										</div>
+										<div class="gen-text col-sm-12">
+											<input class="txt-input3" maxlength="100" id="txt-input" type="text" placeholder="Card #3"/>
+										</div>
+										<div class="close-gen col-sm-4">
+											<button type="button" class="generate-btn" id="generate-btn">Generate</button>
+										</div>
+										<div class="close-gen col-sm-4">
+											<button type="button" class="clear-btn">Clear</button>
+										</div>
+										<div class="close-gen col-sm-4">
+											<button type="button" class="close-btn">Close</button>
+										</div>
+										<div class="results-gen col-sm-12"></div>
+									</div>
+								</div>
+							</div>
+
+							<!-- RIGHT OVER: Mobile Results -->
+							<div class="rightover col-sm-12 col-lg-6">
+								<a class="cross">×</a>
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-6" id="black-card-over">
+											<span id="black-card-title">Black Card</span><br><hr>
+											<span id="black-card-text"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- RIGHT Under: Desktop Results -->
+							<div class="rightunder col-sm-12 col-lg-6">
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-6" id="black-card-under">
+											<span id="black-card-title">Black Card</span><br><hr>
+											<span id="black-card-text-under"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-btn" id="footer-activate"><i id="footer-toggle" class="fas fa-angle-down"></i></div>
+		<!--<div class="floatup-btn" id="floatup-activate"><i id="footer-toggle" class="fas fa-angle-up"></i></div>-->
+		<div class="main-footer container" id="footer-container">
+			<div class="row">
+				<div id="about-section" class="col-xs-4">About</div>
+				<div id="other-section" class="col-xs-4">Other</div>
+				<div id="contact-section" class="col-xs-4">Contact</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12" id="about-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-1 col-sm-2 col-xs-2 offset-sm-4">
+								<a title="Twitter" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="kingdingah"><img src="img/svg/twitter.svg"/></a>
+							</div>
+							<div class="col-md-1 col-sm-2 col-xs-2">
+								<a title="Discord" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="kingo#1215"><img src="img/svg/discord.svg"/></a>
+							</div>
+							<div class="col-md-1 col-sm-2 col-xs-2">
+								<a title="Email" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="kingdingah@outlook.com"><img src="img/svg/email.svg"/></a>
+							</div>
+							<div class="col-md-1 col-sm-2 col-xs-2">
+								<a title="Ello" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="dingah"><img src="img/svg/ello.svg"/></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12" id="other-content">Other</div>
+				<div class="col-sm-12" id="contact-content">Contact</div>
+			</div>
+		</div>
+	</body>
+</html>

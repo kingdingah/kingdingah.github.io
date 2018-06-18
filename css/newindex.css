@@ -186,6 +186,9 @@ div.owl-carousel, .owl-stage, .owl-item
 
 #sklls1c, #sklls2c, #sklls3c{display: none;}
 
+#prjct1c{display: block;}
+#prjct2c, #prjct3c{display: none;}
+
 .ghost
 {
   opacity: 0.65;
@@ -522,7 +525,8 @@ div.owl-carousel, .owl-stage, .owl-item
 
 .area-skills, .area-work{display: none;}
 
-#sklls1c, #sklls2c, #sklls3c
+#sklls1c, #sklls2c, #sklls3c,
+#prjct1c, #prjct2c, #prjct3c
 {
   position: absolute;
   top: 120px;
@@ -530,7 +534,8 @@ div.owl-carousel, .owl-stage, .owl-item
   height: 90%;
 }
 
-#sklls1c td, #sklls2c td, #sklls3c td
+#sklls1c td, #sklls2c td, #sklls3c td,
+#prjct1c td, #prjct2c td, #prjct3c td
 {
   width: 25%;
   color: white !important;
@@ -538,12 +543,19 @@ div.owl-carousel, .owl-stage, .owl-item
   font-size: 1.6em;
 }
 
-#sklls1c img, #sklls2c img, #sklls3c img
+#prjct1c td, #prjct2c td, #prjct3c td
+{
+  width: 50%;
+}
+
+#sklls1c img, #sklls2c img, #sklls3c img,
+#prjct1c img, #prjct2c img, #prjct3c img
 {
   width: 70%;
   left: 10%;
   height: auto;
 }
+
 
 /* END Container Four */
 

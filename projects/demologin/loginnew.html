@@ -19,17 +19,14 @@
     <script src="login.js"></script>
   </head>
   <body>
-    {% if system.config['site/login/message'] is defined and system.config['site/login/message'] is not empty %}
       <div class="alertpopup">
           <span><i class="fa fa-info-circle" aria-hidden="true"></i>Log In Reminder</span>
-          {{ system.config['site/login/message']|raw }}
       </div>
 
       <div class="alertpopup-mob">
           <span><i class="fa fa-info-circle" aria-hidden="true"></i>Log In Reminder<i class="fa fa-angle-down" aria-hidden="true"></i></span>
-          <span>{{ system.config['site/login/message']|raw }}</span>
+          <span></span>
       </div>
-    {% endif %}
 
     <div class="log-banner">
       <img src="dotser-logo-white.svg"/>
@@ -49,13 +46,6 @@
             <form method="post">
               <table class="col-sm-12 log-container" id="sign-in-container">
                 <tr>
-                  {% if error is defined and error is not empty %}
-                    <td colspan="2" class="errormsg">
-                          {{ errormessage }}
-                    </td>
-                  {% endif %}
-                </tr>
-                <tr>
                   <td class="signin current">Log In</td>
                   <td class="signup">Register</td>
                 </tr>
@@ -65,13 +55,6 @@
               </table>
 
               <table class="col-sm-12 log-container" id="sign-in-container-pt2">
-                <tr>
-                  {% if error is defined and error is not empty %}
-                    <td colspan="2" class="errormsg">
-                          {{ errormessage }}
-                    </td>
-                  {% endif %}
-                </tr>
                 <tr>
                   <td class="signin current">Log In</td>
                   <td class="signup">Register</td>
@@ -89,13 +72,6 @@
             <!-- Sign Up container -->
             <form action="" method="">
               <table class="col-sm-12 log-container" id="sign-up-container">
-                <tr>
-                  {% if error is defined and error is not empty %}
-                    <td colspan="2" class="errormsg">
-                          {{ errormessage }}
-                    </td>
-                  {% endif %}
-                </tr>
                 <tr>
                   <td class="signin">Log In</td>
                   <td class="signup current">Register</td>
