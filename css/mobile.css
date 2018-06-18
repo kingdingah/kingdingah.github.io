@@ -264,6 +264,7 @@
   .mobburger
   {
     display: block;
+    z-index: 200;
   }
 
   .container-one .item
