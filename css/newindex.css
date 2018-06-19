@@ -534,6 +534,11 @@ div.owl-carousel, .owl-stage, .owl-item
   height: 90%;
 }
 
+#prjct1c, #prjct2c, #prjct3c
+{
+  top: 150px;
+}
+
 #sklls1c td, #sklls2c td, #sklls3c td,
 #prjct1c td, #prjct2c td, #prjct3c td
 {
@@ -556,6 +561,11 @@ div.owl-carousel, .owl-stage, .owl-item
   height: auto;
 }
 
+#prjct1c img, #prjct2c img, #prjct3c img
+{
+  width: 90%;
+  margin-top: 40px;
+}
 
 /* END Container Four */
 

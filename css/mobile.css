@@ -7,6 +7,22 @@
     left: 155px;
   }
 
+  #sklls1c, #sklls2c, #sklls3c
+  {
+    top: 100px;
+  }
+
+  #prjct1c, #prjct2c, #prjct3c
+  {
+    top: 120px;
+  }
+
+  #prjct1c img, #prjct2c img, #prjct3c img
+  {
+    width: 70%;
+    margin-top: 0px;
+  }
+
   #lbm4c .section, #dsply4c .section, #lg4c .section
   {
     height: 200px;
