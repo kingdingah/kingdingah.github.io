@@ -176,6 +176,23 @@ div.owl-carousel, .owl-stage, .owl-item
   position: relative;
 }
 
+.container-two .artpiece{background-image: url('../img/type1.jpg'); mix-blend-mode: darken;}
+.container-three .artpiece{background-image: url('../img/type4.jpg'); mix-blend-mode: overlay;}
+.container-four .artpiece{background-image: url('../img/type3.png'); mix-blend-mode: lighten;}
+.container-five .artpiece{background-image: url('../img/type4.jpg'); mix-blend-mode: lighten;}
+
+.container-two .artpiece, .container-three .artpiece,
+.container-four .artpiece, .container-five .artpiece
+{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background-size: cover;
+  background-position: center bottom;
+}
+
 .container-two .toEdu
 {
   display: none;

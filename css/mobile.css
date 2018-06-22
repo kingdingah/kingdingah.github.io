@@ -344,9 +344,7 @@
 
   .back-up
   {
-    bottom: 20px;
-    right: 20px;
-    left: auto;
+    display: none;
   }
 
   .art-carousel
@@ -371,16 +369,6 @@
     position: absolute;
     top: 0px;
     left: 50px;
-  }
-
-  .section-subtitle-mob
-  {
-    font-size: 1.8em;
-    color: rgba(255,255,255,0.7) !important;
-    position: absolute;
-    top: 57px;
-    left: 50px;
-    line-height: 30px
   }
 
   .mob-drop
@@ -481,6 +469,117 @@
     width: 70%;
     left: 10%;
     height: auto;
+  }
+
+  .section-subtitle-mob
+  {
+    position: absolute;
+    bottom: 20px;
+    height: 40px;
+    width: 250px;
+    left: calc(50% - 125px);
+    z-index: 300;
+  }
+
+  .section-subtitle-mob span
+  {
+    text-align: center;
+    width: 180px;
+    position: absolute;
+    left: calc(50% - 90px);
+    display: block;
+    line-height: 40px;
+    font-size: 2em;
+    color: white !important;
+  }
+
+  .goleft, .goright
+  {
+    height: 80%;
+    top: 10%;
+    position: absolute;
+  }
+
+  .goleft:hover, .goright:hover
+  {
+    cursor: pointer;
+  }
+
+  .goleft
+  {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    left: 0;
+  }
+  .goright
+  {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 0;
+  }
+
+  #c2gen
+  {
+    position: absolute;
+    top: 75px;
+    left: 50px;
+    text-align: center;
+    font-size: 1.7em;
+    color: white;
+  }
+
+  #c2edu img
+  {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+
+  #c2int span
+  {
+    line-height: 24px;
+    display: block;
+    margin-bottom: 10px;
+    padding-bottom: 10px !important;
+  }
+
+  #c2edu2 span
+  {
+    line-height: 24px;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 21px;
+  }
+
+  #c2edu2 a
+  {
+    margin-top: 20px;
+    background-color: white;
+    color: #252525;
+    display: block;
+    padding: 5px 15px !important;
+    width: 225px;
+    font-size: 21px;
+  }
+
+  #c2edu a
+  {
+    margin-top: 30px;
+    background-color: white;
+    color: #252525;
+    display: block;
+    padding: 5px 15px !important;
+    width: 225px;
+  }
+
+  #c2edu, #c2int, #c2edu2
+  {
+    position: absolute;
+    top: 80px;
+    width: 75%;
+    left: 60px;
+    font-size: 1.7em;
+    color: white;
+    text-align: center;
   }
 }
 

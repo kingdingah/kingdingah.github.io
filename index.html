@@ -87,10 +87,10 @@
     <div class="container-one container">
       <div class="left-stripe"></div>
       <div class="links">
-        <div id="abt">About</div>
-        <div id="dsgn">Design</div>
-        <div id="wb">Web</div>
-        <div id="cntct">Contact</div>
+        <div id="abt" tabindex="1">About</div>
+        <div id="dsgn" tabindex="2">Design</div>
+        <div id="wb" tabindex="3">Web</div>
+        <div id="cntct" tabindex="4">Contact</div>
       </div>
       <div class="mylogo"><img src="img/svg/kingo.svg"/></div>
       <span class="secret">:)</span>
@@ -111,14 +111,14 @@
 
     <div class="container-two container">
       <div class="section-title">About</div>
-      <div class="back-up"><img src="img/svg/goup.svg" /></div>
+      <div class="back-up"><img src="img/svg/goup.svg" tabindex="8"/></div>
       <img class="me" src="img/art/me/me.png"/>
       <div class="section-box area-about">
         <img src="img/svg/kingo.svg"/>
         <div class="linkbox">
-          <a class="link" id="abt1">General</a>
-          <a class="link" id="abt2">Education</a>
-          <a class="link" id="abt3">Interests</a>
+          <a class="link" id="abt1" tabindex="5">General</a>
+          <a class="link" id="abt2" tabindex="6">Education</a>
+          <a class="link" id="abt3" tabindex="7">Interests</a>
         </div>
         <div class="content">
           <div id="abt1c">
@@ -198,8 +198,44 @@
       <div class="section-box-mobile">
         <span class="mob-drop" id="mob-abt"><img src=""/></span>
         <div class="section-title-mob">About</div>
-        <div class="section-subtitle-mob">General<br />Education<br />Interests</div>
-        <div class="section-sublist"></div>
+        <div class="section-subtitle-mob">
+          <img class="goleft" src="img/svg/goup.svg"/>
+          <span>General</span>
+          <img class="goright" src="img/svg/goup.svg"/>
+        </div>
+        <div id="c2gen">
+            Kingo / 21 / Designer
+        </div>
+        <div id="c2edu">
+            <img src="img/svg/ait.svg" />
+            Athlone Institute of Technology<br />
+            Software Design (Cloud Computing)<br />
+            2015 - 2019<br />
+            <a id="toModules">View Modules</a>
+        </div>
+        <div id="c2edu2">
+            <span>Software Development (Java)</span>
+            <span>Software Development for Cloud</span>
+            <span>Web Development</span>
+            <span>Server Side Web Development</span>
+            <span>Databases</span>
+            <span>Networks</span>
+            <span>Mobile App Development</span>
+            <span>Digital Media</span>
+            <span>Agile Methedologies</span>
+            <span>Software Engineering</span>
+            <a id="toModules">Go Back</a>
+        </div>
+        <div id="c2int">
+            <span>Abstract Design</span>
+            <span>Competitive Video Games</span>
+            <span>Furry Fandom</span>
+            <span>Brutalist Architecture</span>
+            <span>Experimental / Electronic Music</span>
+            <span>Yakuza Movies</span>
+            <span>Mobile Technology</span>
+            <span>Sound Design</span>
+        </div>
       </div>
     </div>
 
@@ -402,10 +438,10 @@
       <div class="section-box area-album">
         <span class="linkbox-title">Album</span>
         <div class="linkbox">
-          <a class="link" id="lbm1">2018</a>
-          <a class="link" id="lbm2">2017</a>
-          <a class="link" id="lbm3">2016</a>
-          <a class="link" id="lbm4">Prices</a>
+          <a class="link" id="lbm1" tabindex="9">2018</a>
+          <a class="link" id="lbm2" tabindex="10">2017</a>
+          <a class="link" id="lbm3" tabindex="11">2016</a>
+          <a class="link" id="lbm4" tabindex="12">Prices</a>
         </div>
         <div class="content">
           <div id="lbm1c">
@@ -769,11 +805,11 @@
         <div class="section-sublist"></div>
       </div>
       <div class="section-links">
-        <a id="lbm">Album</a>
+        <a id="lbm" tabindex="13">Album</a>
         <p>/</p>
-        <a id="lg">Logo</a>
+        <a id="lg" tabindex="14">Logo</a>
         <p>/</p>
-        <a id="dsply">Display</a>
+        <a id="dsply" tabindex="15">Display</a>
       </div>
       <div class="back-up"><img src="img/svg/goup.svg" /></div>
     </div>
@@ -785,7 +821,7 @@
       <div class="section-box area-projects">
         <span class="linkbox-title">Projects</span>
         <div class="linkbox">
-          <a class="link" id="prjct1">Personal</a>
+          <a class="link" id="prjct1" tabindex="16">Personal</a>
         <!--
           <a class="link" id="prjct2">Year 1</a>
           <a class="link" id="prjct3">Year 2</a>
@@ -794,15 +830,15 @@
         <div class="content">
           <table id="prjct1c">
             <tr>
-              <td><img src="img/web/personal1.png"/></td>
-              <td><img src="img/web/personal2.png"/></td>
+              <td><img /></td>
+              <td><img /></td>
             </tr>
             <tr>
               <td>FurAffinity Redesign</td>
               <td>Cards Against Humanity Generator</td>
             </tr>
             <tr>
-              <td><img src="img/web/personal3.png"/></td>
+              <td><img /></td>
               <td></td>
             </tr>
             <tr>
@@ -812,16 +848,16 @@
           </table>
           <table id="prjct2c">
             <tr>
-              <td><img src="img/web/year11.png"/></td>
-              <td><img src="img/web/year12.png"/></td>
+              <td><img /></td>
+              <td><img /></td>
             </tr>
             <tr>
               <td>Atom</td>
               <td>Netbeans</td>
             </tr>
             <tr>
-              <td><img src="img/web/year13.png"/></td>
-              <td><img src="img/web/year14.png"/></td>
+              <td><img/></td>
+              <td><img /></td>
             </tr>
             <tr>
               <td>Trello</td>
@@ -830,16 +866,16 @@
           </table>
           <table id="prjct3c">
             <tr>
-              <td><img src="img/web/year21.png"/></td>
-              <td><img src="img/web/year22.png"/></td>
+              <td><img/></td>
+              <td><img/></td>
             </tr>
             <tr>
               <td>Atom</td>
               <td>Netbeans</td>
             </tr>
             <tr>
-              <td><img src="img/web/year23.png"/></td>
-              <td><img src="img/web/year24.png"/></td>
+              <td><img /></td>
+              <td><img /></td>
             </tr>
             <tr>
               <td>Trello</td>
@@ -931,9 +967,9 @@
         <div class="section-sublist"></div>
       </div>
       <div class="section-links">
-        <a id="prjcts">Projects</a>
+        <a id="prjcts" tabindex="17">Projects</a>
         <p>/</p>
-        <a id="sklls">Skills</a>
+        <a id="sklls" tabindex="18">Skills</a>
       </div>
       <div class="back-up"><img src="img/svg/goup.svg" /></div>
     </div>
@@ -942,13 +978,13 @@
 
     <div class="container-five container">
       <div class="section-title">Contact</div>
-      <div class="back-up"><img src="img/svg/goup.svg" /></div>
+      <div class="back-up"><img src="img/svg/goup.svg" tabindex="22"/></div>
       <div class="section-box area-twitter">
         <img src="img/svg/twitter2.svg" />
         <div class="linkbox">
-          <a class="link" id="twttr1">Personal</a>
-          <a class="link" id="twttr2">Design</a>
-          <a class="link" id="twttr3">Private</a>
+          <a class="link" id="twttr1" tabindex="19">Personal</a>
+          <a class="link" id="twttr2" tabindex="20">Design</a>
+          <a class="link" id="twttr3" tabindex="21">Private</a>
         </div>
         <div class="content">
           <div id="twttrc">
@@ -958,7 +994,7 @@
           </div>
         </div>
         <span class="linktitle"><span class="ghost">Twitter</span> / @kingdingah</span>
-        <a class="goto" href="https://www.twitter.com/kingdingah" target="_blank" >Go To @kingdingah</a>
+        <a class="goto" href="https://www.twitter.com/kingdingah" target="_blank" tabindex="23">Go To @kingdingah</a>
       </div>
       <div class="section-box area-discord">
         <img src="img/svg/discord.svg" />
@@ -1031,11 +1067,11 @@
         </div>
       </div>
       <div class="section-links">
-        <a id="twttr">Twitter</a>
+        <a id="twttr" tabindex="24">Twitter</a>
         <p>/</p>
-        <a id="dscrd">Discord</a>
+        <a id="dscrd" tabindex="25">Discord</a>
         <p>/</p>
-        <a id="other">Other</a>
+        <a id="other" tabindex="26">Other</a>
       </div>
     </div>
     <script type="text/javascript" src="packages/slick/slick.min.js"></script>

@@ -614,4 +614,69 @@ $(document).ready(function() {
     }
   });
 
+  $(".goleft").css({'opacity':'0.4'});
+  $("#c2edu").hide();
+  $("#c2int").hide();
+  $("#c2edu2").hide();
+
+  var c2text = $(".section-subtitle-mob span").text();
+
+  $(".goright").click(function() {
+    if(c2text == "General")
+    {
+      c2text = "Education";
+      $(".section-subtitle-mob span").text("Education");
+      $(".goleft").css({'opacity':'1'});
+      $(".goright").css({'opacity':'1'});
+      $("#c2gen").fadeOut(250);
+      $(".me").fadeOut(250);
+      $("#c2edu").delay(250).fadeIn(250);
+    }
+    else
+    {
+      c2text = "Interests";
+      $(".section-subtitle-mob span").text("Interests");
+      $(".goleft").css({'opacity':'1'});
+      $(".goright").css({'opacity':'0.4'});
+      $("#c2edu").fadeOut(250);
+      $("#c2int").delay(250).fadeIn(250);
+    }
+
+    $("#c2edu2").fadeOut(250);
+  });
+
+  $(".goleft").click(function() {
+    if(c2text == "Interests")
+    {
+      c2text = "Education";
+      $(".section-subtitle-mob span").text("Education");
+      $(".goleft").css({'opacity':'1'});
+      $(".goright").css({'opacity':'1'});
+      $("#c2int").fadeOut(250);
+      $("#c2edu").delay(250).fadeIn(250);
+    }
+    else
+    {
+      c2text = "General";
+      $(".me").fadeIn(250);
+      $(".section-subtitle-mob span").text("General");
+      $(".goleft").css({'opacity':'0.4'});
+      $(".goright").css({'opacity':'1'});
+      $("#c2edu").fadeOut(250);
+      $("#c2gen").delay(250).fadeIn(250);
+    }
+
+    $("#c2edu2").fadeOut(250);
+  });
+
+  $("#toModules").click(function() {
+      $("#c2edu2").fadeIn(250);
+      $("#c2edu").fadeOut(250);
+  });
+
+  $("#backToEdu").click(function() {
+      $("#c2edu").fadeIn(250);
+      $("#c2edu2").fadeOut(250);
+  });
+
 });
