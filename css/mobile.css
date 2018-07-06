@@ -556,9 +556,9 @@
     background-color: white;
     color: #252525;
     display: block;
-    padding: 5px 15px !important;
-    width: 225px;
-    font-size: 21px;
+    padding: 4px 12px !important;
+    width: 200px;
+    font-size: 19px;
   }
 
   #c2edu a
@@ -580,6 +580,66 @@
     font-size: 1.4em;
     color: white;
     text-align: center;
+  }
+
+  #c3dis, #c3alb, #c3lg
+  {
+    position: absolute;
+    top: 80px;
+    width: 75%;
+    left: 60px;
+    font-size: 1.4em;
+    color: white;
+    text-align: center;
+    height: 100%;
+  }
+
+  .mob-carousel
+  {
+    position: absolute !important;
+    top: 45px;
+    z-index: 11 !important;
+    cursor: -webkit-grab;
+    cursor: grab;
+    display: block !important;
+  }
+
+  .design-title
+  {
+    font-size: 1.2em;
+    height: 34px;
+    line-height: 34px;
+  }
+
+  .design-subtitle
+  {
+    font-size: 1em;
+  }
+
+  .next, .prev
+  {
+    font-size: 1em;
+  }
+
+  #c3menu
+  {
+    color: white;
+    top: 70px;
+    left: 52px;
+    position: absolute;
+    font-size: 1.6em;
+    z-index: 30;
+  }
+
+  #c3menu #c317,
+  #c3menu #c316
+  {
+    opacity: 0.3;
+  }
+
+  #c3menu p
+  {
+    display: inline-block !important;
   }
 }
 

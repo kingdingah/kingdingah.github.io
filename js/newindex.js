@@ -50,8 +50,17 @@ $(document).ready(function() {
     dots: false,
     pagination:false,
     nav: true,
-    nav: true,
     navText: ["<span class='prev'>Previous</span>","<span class='next'>Next</span>"]
+  });
+
+  $('.container-three .mob-carousel').owlCarousel({
+    loop: false,
+    margin: 0,
+    dots: false,
+    pagination:false,
+    nav: true,
+    navText: ["<span class='prev'>Previous</span>","<span class='next'>Next</span>"],
+    items:1
   });
 
   $('.container-three .area-display .owl-carousel').owlCarousel({
@@ -59,7 +68,6 @@ $(document).ready(function() {
     margin: 0,
     dots: false,
     pagination:false,
-    nav: true,
     nav: true,
     navText: ["<span class='prev'>Previous</span>","<span class='next'>Next</span>"],
     responsive:{
@@ -619,55 +627,8 @@ $(document).ready(function() {
   $("#c2int").hide();
   $("#c2edu2").hide();
 
-  var c2text = $(".section-subtitle-mob span").text();
-
-  $(".goright").click(function() {
-    if(c2text == "General")
-    {
-      c2text = "Education";
-      $(".section-subtitle-mob span").text("Education");
-      $(".goleft").css({'opacity':'1'});
-      $(".goright").css({'opacity':'1'});
-      $("#c2gen").fadeOut(250);
-      $(".me").fadeOut(250);
-      $("#c2edu").delay(250).fadeIn(250);
-    }
-    else
-    {
-      c2text = "Interests";
-      $(".section-subtitle-mob span").text("Interests");
-      $(".goleft").css({'opacity':'1'});
-      $(".goright").css({'opacity':'0.4'});
-      $("#c2edu").fadeOut(250);
-      $("#c2int").delay(250).fadeIn(250);
-    }
-
-    $("#c2edu2").fadeOut(250);
-  });
-
-  $(".goleft").click(function() {
-    if(c2text == "Interests")
-    {
-      c2text = "Education";
-      $(".section-subtitle-mob span").text("Education");
-      $(".goleft").css({'opacity':'1'});
-      $(".goright").css({'opacity':'1'});
-      $("#c2int").fadeOut(250);
-      $("#c2edu").delay(250).fadeIn(250);
-    }
-    else
-    {
-      c2text = "General";
-      $(".me").fadeIn(250);
-      $(".section-subtitle-mob span").text("General");
-      $(".goleft").css({'opacity':'0.4'});
-      $(".goright").css({'opacity':'1'});
-      $("#c2edu").fadeOut(250);
-      $("#c2gen").delay(250).fadeIn(250);
-    }
-
-    $("#c2edu2").fadeOut(250);
-  });
+  var c2text = $(".container-two .section-subtitle-mob span").text();
+  var c3text = $(".container-three .section-subtitle-mob span").text();
 
   $("#toModules").click(function() {
       $("#c2edu2").fadeIn(250);
@@ -679,4 +640,114 @@ $(document).ready(function() {
       $("#c2edu2").fadeOut(250);
   });
 
+  $(".container-two .goright").click(function() {
+    if(c2text == "General")
+    {
+      c2text = "Education";
+      $(".container-two .section-subtitle-mob span").text("Education");
+      $(".container-two .goleft").css({'opacity':'1'});
+      $(".container-two .goright").css({'opacity':'1'});
+      $("#c2gen").fadeOut(250);
+      $(".me").fadeOut(250);
+      $("#c2edu").delay(250).fadeIn(250);
+    }
+    else
+    {
+      c2text = "Interests";
+      $(".container-two .section-subtitle-mob span").text("Interests");
+      $(".container-two .goleft").css({'opacity':'1'});
+      $(".container-two .goright").css({'opacity':'0.4'});
+      $("#c2edu").fadeOut(250);
+      $("#c2int").delay(250).fadeIn(250);
+    }
+
+    $("#c2edu2").fadeOut(250);
+  });
+
+  $(".container-two .goleft").click(function() {
+    if(c2text == "Interests")
+    {
+      c2text = "Education";
+      $(".container-two .section-subtitle-mob span").text("Education");
+      $(".container-two .goleft").css({'opacity':'1'});
+      $(".container-two .goright").css({'opacity':'1'});
+      $("#c3lg").fadeOut(250);
+      $("#c3dis").delay(250).fadeIn(250);
+    }
+    else
+    {
+      c2text = "General";
+      $(".me").fadeIn(250);
+      $(".container-two .section-subtitle-mob span").text("General");
+      $(".container-two .goleft").css({'opacity':'0.4'});
+      $(".container-two .goright").css({'opacity':'1'});
+      $("#c3dis").fadeOut(250);
+      $("#c3alb").delay(250).fadeIn(250);
+    }
+
+    $("#c2edu2").fadeOut(250);
+  });
+
+  $(".container-three .goright").click(function() {
+    if(c3text == "Albums")
+    {
+      c3text = "Displays";
+      $(".container-three .section-subtitle-mob span").text("Displays");
+      $(".container-three .goleft").css({'opacity':'1'});
+      $(".container-three .goright").css({'opacity':'1'});
+      $("#c3alb").fadeOut(250);
+      $("#c3dis").delay(250).fadeIn(250);
+    }
+    else
+    {
+      c3text = "Logos";
+      $(".container-three .section-subtitle-mob span").text("Logos");
+      $(".container-three .goleft").css({'opacity':'1'});
+      $(".container-three .goright").css({'opacity':'0.4'});
+      $("#c3dis").fadeOut(250);
+      $("#c3lg").delay(250).fadeIn(250);
+    }
+  });
+
+  $(".container-three .goleft").click(function() {
+    if(c3text == "Logos")
+    {
+      c3text = "Displays";
+      $(".container-three .section-subtitle-mob span").text("Displays");
+      $(".container-three .goleft").css({'opacity':'1'});
+      $(".container-three .goright").css({'opacity':'1'});
+      $("#c3lg").fadeOut(250);
+      $("#c3dis").delay(250).fadeIn(250);
+    }
+    else
+    {
+      c3text = "Albums";
+      $(".container-three .section-subtitle-mob span").text("Albums");
+      $(".container-three .goleft").css({'opacity':'0.4'});
+      $(".container-three .goright").css({'opacity':'1'});
+      $("#c3dis").fadeOut(250);
+      $("#c3alb").delay(250).fadeIn(250);
+    }
+  });
+
+  $("#c3alb .next").click(function() {
+    if($(".active img").hasClass('c318'))
+    {
+      $("#c318").css({'opacity':'1'});
+      $("#c317").css({'opacity':'0.3'});
+      $("#c316").css({'opacity':'0.3'});
+    }
+    else if($(".active img").hasClass('c317'))
+    {
+      $("#c318").css({'opacity':'0.3'});
+      $("#c317").css({'opacity':'1'});
+      $("#c316").css({'opacity':'0.3'});
+    }
+    else
+    {
+      $("#c318").css({'opacity':'0.3'});
+      $("#c317").css({'opacity':'0.3'});
+      $("#c316").css({'opacity':'1'});
+    }
+  });
 });
