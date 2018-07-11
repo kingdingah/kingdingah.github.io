@@ -750,4 +750,8 @@ $(document).ready(function() {
       $("#c316").css({'opacity':'1'});
     }
   });
+
+  $(".closeHome").click(function() {
+    $(".add2Home").fadeOut('200');
+  });
 });
