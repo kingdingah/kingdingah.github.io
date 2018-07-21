@@ -896,5 +896,5 @@ $(document).ready(function() {
     }
   });
 
-  new LazyLoad();
+  lazyload();
 });
