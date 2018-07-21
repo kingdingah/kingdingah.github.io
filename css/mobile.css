@@ -285,8 +285,8 @@
 
   .container-one .item
   {
-    width: 150px !important;
-    height: 150px !important;
+    width: 130px !important;
+    height: 130px !important;
   }
 
   .chains
@@ -596,11 +596,21 @@
 
   .dspmob
   {
-    width: 75%;
+    width: 100%;
     height: 100%;
-    margin-left: 12.5%;
     overflow: auto;
     margin-top: 35px;
+    position: absolute;
+    z-index: 1000;
+  }
+
+  .dspmob  span
+  {
+    display: block;
+    width: 100%;
+    padding: 6px 0 !important;
+    font-size: 1.4em !important;
+    color: white;
   }
 
   #c3dis
@@ -609,11 +619,46 @@
     display: none;
   }
 
+  #c3lg
+  {
+    display: none;
+  }
+
+  .lightboxmob
+  {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.65);
+    position: absolute;
+    display: none;
+    z-index: 2000;
+  }
+
+  .lightboxmob .cls
+  {
+     position: absolute;
+     top: 20px;
+     right: 20px;
+     padding: 5px 15px !important;
+     font-size: 18px;
+     background-color: white;
+     color: black !important;
+     display: block;
+  }
+
+  .lightboxmob img
+  {
+    position: absolute;
+    width: 90%;
+    height: auto;
+    left: 5%;
+  }
+
   .dspmob img
   {
     width: 100%;
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
 
   .mob-carousel

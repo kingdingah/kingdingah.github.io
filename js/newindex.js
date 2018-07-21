@@ -29,7 +29,7 @@ $(document).ready(function() {
 
   $("div.notready").hide();
 
-  $("span.cls").click(function()
+  $(".lightbox span.cls").click(function()
   {
     if($("div.notready").is(":visible"))
     {
@@ -688,10 +688,16 @@ $(document).ready(function() {
     $("#c2edu2").fadeOut(250);
   });
 
-  $(".container-three .goright").click(function() {
+  $(".container-three .goright").click(function()
+  {
+    $("#c318").css({'opacity':'1'});
+    $("#c317").css({'opacity':'0.3'});
+    $("#c316").css({'opacity':'0.3'});
+
     if(c3text == "Albums")
     {
       c3text = "Displays";
+      $("#c3menu").fadeOut(150);
       $(".container-three .section-subtitle-mob span").text("Displays");
       $(".container-three .goleft").css({'opacity':'1'});
       $(".container-three .goright").css({'opacity':'1'});
@@ -701,6 +707,7 @@ $(document).ready(function() {
     else
     {
       c3text = "Logos";
+      $("#c3menu").fadeIn(150);
       $(".container-three .section-subtitle-mob span").text("Logos");
       $(".container-three .goleft").css({'opacity':'1'});
       $(".container-three .goright").css({'opacity':'0.4'});
@@ -709,10 +716,16 @@ $(document).ready(function() {
     }
   });
 
-  $(".container-three .goleft").click(function() {
+  $(".container-three .goleft").click(function()
+  {
+    $("#c318").css({'opacity':'1'});
+    $("#c317").css({'opacity':'0.3'});
+    $("#c316").css({'opacity':'0.3'});
+
     if(c3text == "Logos")
     {
       c3text = "Displays";
+      $("#c3menu").fadeOut(150);
       $(".container-three .section-subtitle-mob span").text("Displays");
       $(".container-three .goleft").css({'opacity':'1'});
       $(".container-three .goright").css({'opacity':'1'});
@@ -722,6 +735,7 @@ $(document).ready(function() {
     else
     {
       c3text = "Albums";
+      $("#c3menu").fadeIn(150);
       $(".container-three .section-subtitle-mob span").text("Albums");
       $(".container-three .goleft").css({'opacity':'0.4'});
       $(".container-three .goright").css({'opacity':'1'});
@@ -791,7 +805,84 @@ $(document).ready(function() {
     }
   });
 
-  $("#c3alb .prev, #c3alb .next").click(function() {
-    console.log(count);
+  var count2 = 0;
+
+  $("#c3lg .next").click(function() {
+    if(count2 == 21)
+    {
+      count2 = 21;
+    }
+    else
+    {
+      count2++;
+      if(count2 >=1 && count2 <= 3)
+      {
+        $("#c318").css({'opacity':'1'});
+        $("#c317").css({'opacity':'0.3'});
+        $("#c316").css({'opacity':'0.3'});
+      }
+      else if(count2 >=4 && count2 <= 10)
+      {
+        $("#c318").css({'opacity':'0.3'});
+        $("#c317").css({'opacity':'1'});
+        $("#c316").css({'opacity':'0.3'});
+      }
+      else if(count2 >= 12)
+      {
+        $("#c318").css({'opacity':'0.3'});
+        $("#c317").css({'opacity':'0.3'});
+        $("#c316").css({'opacity':'1'});
+      }
+    }
+  });
+
+  $("#c3lg .prev").click(function()
+  {
+    if(count2 > 0 && count2 < 2)
+    {
+      count2 = 1;
+    }
+    else
+    {
+      count2--;
+      if(count2 >=1 && count2 <= 3)
+      {
+        $("#c318").css({'opacity':'1'});
+        $("#c317").css({'opacity':'0.3'});
+        $("#c316").css({'opacity':'0.3'});
+      }
+      else if(count2 >=4 && count2 <= 10)
+      {
+        $("#c318").css({'opacity':'0.3'});
+        $("#c317").css({'opacity':'1'});
+        $("#c316").css({'opacity':'0.3'});
+      }
+      else if(count2 >= 12)
+      {
+        $("#c318").css({'opacity':'0.3'});
+        $("#c317").css({'opacity':'0.3'});
+        $("#c316").css({'opacity':'1'});
+      }
+    }
+  });
+
+  $("#c3dis img").click(function() {
+    $("html, body").stop().animate({scrollTop:$(".container-two").height()*2}, 450);
+    $("body").css("overflow","hidden");
+    $(".lightboxmob").fadeIn(150);
+    $(".lightboxmob img").attr("src", $(this).attr("src"));
+    var imgheight = $(".lightboxmob img").height();
+    $(".lightboxmob img").css({
+      'top':'calc(50% - ' + (imgheight/2) + 'px)'
+    });
+  });
+
+  $(".lightboxmob span.cls").click(function()
+  {
+    if($("div.lightboxmob").is(":visible"))
+    {
+      $(".lightboxmob").fadeOut(150);
+      $("body").css("overflow","auto");
+    }
   });
 });
