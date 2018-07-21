@@ -390,7 +390,7 @@
   .container-two img.me
   {
     left: auto;
-    right: 0;
+    right: 15px;
     overflow-x: hidden;
     z-index: 100;
     height: 80%;
@@ -531,7 +531,7 @@
     top: 75px;
     left: 50px;
     text-align: center;
-    font-size: 1.7em;
+    font-size: 1.4em;
     color: white;
   }
 
@@ -582,7 +582,7 @@
   {
     position: absolute;
     top: 80px;
-    width: 75%;
+    width: 65%;
     left: 60px;
     font-size: 1.4em;
     color: white;
@@ -628,6 +628,31 @@
 
   #c3lg
   {
+    display: none;
+  }
+
+  .plsignore
+  {
+    font-size: 3em !important;
+    color: white !important;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
+    opacity: 0.5;
+    line-height: 60px;
+  }
+
+  .discmob
+  {
+    position: absolute;
+    top: calc(50% - 20px);
+    height: 40px;
+    width: 260px;
+    color: white !important;
+    left: calc(50% - 130px);
+    text-align: center;
+    font-size: 1.3em;
     display: none;
   }
 

@@ -982,6 +982,10 @@ div.commstatus th
   font-size: 1.4em !important;
 }
 
+.howto
+{
+  display: none;
+}
 
 /* END Container General */
 
@@ -994,6 +998,7 @@ div.notready
   position: fixed;
   z-index: 100;
   background-color: #ef374f;
+  display: none;
 }
 
 .notready span.notsuitable

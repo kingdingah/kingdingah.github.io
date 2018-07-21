@@ -313,7 +313,7 @@ $(document).ready(function() {
   $("#twttr3").click(function() {
     $('.area-twitter .goto').html('Go To @kingosplace');
     $('.area-twitter .linktitle').html('<span class="ghost">Twitter</span> / @kingosplace');
-    $('.area-twitter .goto').attr("href", "https://www.twitter.com/kingosplace");
+    $('.area-twitter .goto').attr("href", "https://www.twitter.com/musicoftheair");
     $('#twttrc .subttl').html('Where I come to scream<br/>Things get dark here</br></br>Only request if I know you well');
   });
 
@@ -565,6 +565,8 @@ $(document).ready(function() {
 
   $("#mobtwitter span").click(function()
   {
+    $(".discmob").fadeOut(150);
+
     if(click1)
     {
       $("#mobdiscord, #mobother").fadeOut(250);
@@ -584,6 +586,8 @@ $(document).ready(function() {
 
   $("#mobdiscord span").click(function()
   {
+    $(".discmob").fadeOut(150);
+
     if(click2)
     {
       $("#mobtwitter, #mobother").fadeOut(250);
@@ -604,6 +608,8 @@ $(document).ready(function() {
 
   $("#mobother span").click(function()
   {
+    $(".discmob").fadeOut(150);
+
     if(click3)
     {
       $("#mobdiscord, #mobtwitter").fadeOut(250);
@@ -875,6 +881,10 @@ $(document).ready(function() {
     $(".lightboxmob img").css({
       'top':'calc(50% - ' + (imgheight/2) + 'px)'
     });
+  });
+
+  $("#discmob").click(function() {
+    $(".discmob").fadeIn(150);
   });
 
   $(".lightboxmob span.cls").click(function()
