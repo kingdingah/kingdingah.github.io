@@ -586,12 +586,34 @@
   {
     position: absolute;
     top: 80px;
-    width: 75%;
-    left: 60px;
+    width: 66%;
+    left: 17%;
     font-size: 1.4em;
     color: white;
     text-align: center;
     height: 100%;
+  }
+
+  .dspmob
+  {
+    width: 75%;
+    height: 100%;
+    margin-left: 12.5%;
+    overflow: auto;
+    margin-top: 35px;
+  }
+
+  #c3dis
+  {
+    height: 65%;
+    display: none;
+  }
+
+  .dspmob img
+  {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
   }
 
   .mob-carousel
@@ -606,19 +628,19 @@
 
   .design-title
   {
-    font-size: 1.2em;
+    font-size: 1em;
     height: 34px;
     line-height: 34px;
   }
 
   .design-subtitle
   {
-    font-size: 1em;
+    font-size: 0.7em;
   }
 
   .next, .prev
   {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   #c3menu
