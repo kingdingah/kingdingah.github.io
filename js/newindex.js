@@ -265,6 +265,8 @@ $(document).ready(function() {
     $('.area-skills .linktitle').html('<span class="ghost">Software</span> / Skills / Web');
   });
 
+  $('.area-skills .linktitle').html('<span class="ghost">Software</span> / Skills / Web');
+
   $("#sklls1").click(function() {
     $('.area-skills .linktitle').html('<span class="ghost">Software</span> / Skills / Web');
     $('#sklls1c').show();
@@ -515,10 +517,10 @@ $(document).ready(function() {
       });
   });
 
-  $(".overlay a").click(function() {
+  $(".album-carousel img, .display-carousel img, .logo-carousel img").click(function() {
     $("body").css("overflow","hidden");
     $(".lightbox").show();
-    $(".lightbox img").attr("src", $(this).parent().siblings('img').attr("src"));
+    $(".lightbox img").attr("src", "big-" + $(this).attr("src"));
   });
 
   if($(window).width() < 990)

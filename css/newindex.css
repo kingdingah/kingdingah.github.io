@@ -207,7 +207,7 @@ div.owl-carousel, .owl-stage, .owl-item
 #abt1c{display: block;}
 #abt2c, #abt3c{display: none;}
 
-#sklls1c, #sklls2c, #sklls3c{display: none;}
+#sklls2c, #sklls3c{display: none;}
 
 #prjct1c{display: block;}
 #prjct2c, #prjct3c{display: none;}
@@ -544,9 +544,9 @@ div.owl-carousel, .owl-stage, .owl-item
   cursor: pointer;
 }
 
-.area-projects{display: block;}
+.area-skills{display: block;}
 
-.area-skills, .area-work{display: none;}
+.area-projects, .area-work{display: none;}
 
 #sklls1c, #sklls2c, #sklls3c,
 #prjct1c, #prjct2c, #prjct3c
