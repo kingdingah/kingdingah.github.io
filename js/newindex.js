@@ -538,6 +538,13 @@ $(document).ready(function() {
     });
   }
 
+  $(window).resize(function(event) {
+    $(".chains").css({
+      'left':'180px',
+      'height':($("html").height()*5)
+    });
+  });
+
   if($("div.notready").is(":visible"))
   {
     $("body").css("overflow","hidden");
