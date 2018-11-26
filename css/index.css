@@ -1,7 +1,10 @@
+/* index css init*/
+
 html, body
 {
   min-height: 100%;
   height: 100%;
+  background-color: #000 !important;
 }
 
 *
@@ -15,167 +18,283 @@ html, body
 
 @font-face
 {
-    font-family: opensans;
-    src: url('../fonts/opensans/OpenSans-Light.ttf');
+    font-family: smalle;
+    src: url('../fonts/smalle.ttf');
 }
 
 @font-face
 {
-    font-family: opensans-b;
-    src: url('../fonts/opensans/OpenSans-SemiBold.ttf');
+    font-family: gothic;
+    src: url('../fonts/gothic.ttf');
 }
 
-/* Main Styles */
-
-/* ScrollWheel Styles */
-
-div.nav-subbox::-webkit-scrollbar
-{
-  display: none;
-}
-/*
-::-webkit-scrollbar {
-    width: 15px;
-}
-
-::-webkit-scrollbar-track {
-    background: #111;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #333;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #444;
-}
-*/
-div.main
-{
-  width: 100%;
-  height: auto;
-}
-
-div.black-overlay
+.main
 {
   width: 100%;
   height: 100%;
-  display: none;
-  position: fixed;
-  z-index: 900;
-  background-color: rgba(0,0,0,0.6);
-}
-
-div.site-footer
-{
-  height: 100px;
-  background-color: #111;
-}
-
-div.footer-content
-{
-  color: white;
-  font-size: 1em;
-  text-align: center;
-  margin-top: 40px;
-}
-
-/* New Notes*/
-
-div.notes-container
-{
-  width: 350px;
-  height: 60px;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 10;
-}
-
-div.new-note
-{
-  width: 350px;
-  height: 60px;
-  background-color: #23a02f;
-  border-radius: 10px;
-  position: fixed;
-  z-index: 1100;
-  bottom: -100px;
-  right: 25px
-}
-
-span.close-icon-info:hover
-{
-  cursor: pointer;
-}
-
-div.new-note span.close-icon-info
-{
-  height: 50px;
-  width: 50px;
-  display: block;
-  top: 0px;
-  left: 0px;
-  margin: 15px 0px 0px 15px;
-}
-
-div.new-note span.close-icon-info:hover
-{
-  cursor: pointer;
-}
-
-div.new-note span.close-icon-info img
-{
-  width: 30%;
-  height: auto;
-}
-
-span.close-icon-info
-{
-  height: 20px;
-  width: 20px;
   position: absolute;
-  top: 15px;
-  left: 15px;
-  border-radius: 10px;
+  z-index: 50;
+  background: #000;
 }
 
-span.note-info
+.menu, .menualt
 {
-  width:100%;
+  width: 320px;
+  position: absolute;
+  left: calc(50% - 160px);
+}
+
+.menualt
+{
+  position: relative;
+  left: 0;
+}
+
+.menu a, .menualt a
+{
+  color: white !important;
+  font-size: 22px;
   text-align: center;
-  font-size: 1.1em;
+  padding: 4px 0 !important;
+  font-family: smalle;
+  width: 100%;
+  letter-spacing: 2px;
+  display: block;
+  transition: 0.2s ease;
+  -webkit-transition: 0.2s ease;
+}
+
+@-webkit-keyframes spaceboots {
+	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -webkit-transform: translate(-1px, 0px) rotate(1deg); }
+	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -webkit-transform: translate(-1px, 1px) rotate(0deg); }
+	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.menu a:hover, .menu a:focus,
+.menualt a:hover, .menualt a:focus,
+.goback:hover, .goback:focus
+{
+  -webkit-animation-name: spaceboots;
+	-webkit-animation-duration: 0.2s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.me
+{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.hobbies, .about, .work, .contact
+{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.about .info, .hobbies .info
+{
+  width: 400px;
+  margin-top: 25px;
+  font-size: 18px;
+  font-family: smalle;
+  text-align: justify;
+  -moz-text-align-last: center;
+  text-align-last: center;
   color: white;
-  height: 60px;
-  line-height: 60px;
+}
+
+.work .info
+{
+  width: 400px;
+  margin-top: 25px;
+  font-size: 30px;
+  font-family: smalle;
+  text-align: justify;
+  -moz-text-align-last: center;
+  text-align-last: center;
+  color: white;
+
+  -webkit-animation-name: spaceboots;
+	-webkit-animation-duration: 0.2s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+.hobbies .realtitle
+{
+  width: 400px;
+  font-size: 24px;
+  font-family: smalle;
+  display: block;
+  text-align: justify;
+  -moz-text-align-last: center;
+  text-align-last: center;
+  color: white;
+}
+
+.hobbies .info
+{
+  margin-bottom: 25px;
+  padding-bottom: 40px !important;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.contact
+{
   display: block;
 }
 
-/* Quick Upload */
-
-div.quick-upload
+.hobbies .title
 {
-  height: 100%;
-  width: 400px;
-  background-color: #333;
-  position: fixed;
-  left: -400px;
-  top: 0;
-  z-index: 999;
+  width: 200px;
+  height: auto;
+  margin-left: calc(50% - 100px);
 }
 
-@media screen and (max-width: 990px)
+.title, .hobbies .title:first-child
 {
-  div.site-footer
-  {
-    height: 40px;
-    background-color: #111;
-  }
+  width: 300px;
+  height: auto;
+  margin-left: calc(50% - 150px);
+}
 
-  div.footer-content
-  {
-    margin-top: 0;
-    line-height: 40px;
-    font-size: 0.8em;
-  }
+.goback
+{
+  width: 150px;
+  margin-left: calc(50% - 75px);
+  margin-top: -60px;
+  text-align: center;
+  font-size: 16px;
+  color: white !important;
+  font-family: smalle;
+  display: block;
+  opacity: 0.2;
+}
+
+.contact
+{
+  height: 100%;
+}
+
+.popup
+{
+  width: 600px;
+  height: 140px;
+  background: #000;
+  position: absolute;
+  border: 1px solid white;
+  left: calc(50% - 300px);
+  top: calc(50% - 100px);
+  z-index: 100;
+  display: none;
+}
+
+.popup input
+{
+  display: block;
+  text-align: center;
+  font-family: smalle;
+  font-size: 40px;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background-color: rgba(0,0,0,0);
+  border: none;
+  outline: none;
+  color: white !important;
+}
+
+.popup button
+{
+  display: block;
+  text-align: center;
+  font-family: smalle;
+  font-size: 20px;
+  width: 100px;
+  height: 30px;
+  margin-bottom: 10px;
+  opacity: 0.2;
+  background-color: #000;
+  border: 1px solid white;
+  outline: none;
+  line-height: 30px;
+  padding: 3px 0 !important;
+  margin-left: calc(50% - 50px);
+  color: white !important;
+}
+
+.popup button:hover, .popup button:focus,
+.popup button:active
+{
+  cursor: pointer;
+  border: 1px solid white;
+  outline: none;
+  opacity: 1;
+}
+
+.popup img
+{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 14px;
+  height: 14px;
+}
+.popup img:hover
+{
+  cursor: pointer;
+}
+
+.toast
+{
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  bottom: 15px;
+  background: #000;
+  width: 130px;
+  left: calc(50% - 65px);
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 5px 10px !important;
+  border: 1px solid white;
+  font-family: smalle;
+}
+
+.linkimg
+{
+  width: 200px;
+  height: auto;
+  margin-left: calc(50% - 100px);
+}
+
+::selection {
+  background: #ffffff; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ffffff; /* Gecko Browsers */
+}
+
+.hobbies
+{
+  margin-bottom: 70px;
 }
