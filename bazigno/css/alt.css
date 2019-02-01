@@ -1,0 +1,32 @@
+html {
+	background-position: right;
+	background-size: 50%;
+	background-repeat: no-repeat;
+}
+* {
+	margin: 0 auto;
+	padding: 0 auto;
+	font-family: sans-serif;
+}
+h1{
+	text-align: center;
+	font-size: 2em;
+	width: 100%;
+}
+h3{
+	text-align: center;
+	width: 100%;
+}
+table {
+	padding-top: 40px;
+	width: 100%;
+	padding-left: 60px;
+	padding-right: 60px;
+	font-size: 2em;
+}
+th {
+	padding: 15px;
+}
+a {
+	text-decoration: none;
+}
