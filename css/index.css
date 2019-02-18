@@ -130,12 +130,6 @@ html, body
   -moz-text-align-last: center;
   text-align-last: center;
   color: white;
-
-  -webkit-animation-name: spaceboots;
-	-webkit-animation-duration: 0.2s;
-	-webkit-transform-origin:50% 50%;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
 }
 
 .hobbies .realtitle
@@ -148,6 +142,40 @@ html, body
   -moz-text-align-last: center;
   text-align-last: center;
   color: white;
+}
+
+.work .realtitle
+{
+  width: 400px;
+  margin-top: 30px;
+  font-size: 36px;
+  font-family: smalle;
+  display: block;
+  text-align: justify;
+  -moz-text-align-last: center;
+  text-align-last: center;
+  color: white;
+}
+
+.imgroll
+{
+  width: 600px;
+  height: auto;
+}
+
+.imgroll img
+{
+  width: 560px;
+  height: auto;
+  margin: 10px 20px !important;
+}
+
+.img2 img
+{
+  width: 280px;
+  height: auto;
+  float: left;
+  margin: 10px 10px !important;
 }
 
 .hobbies .info
